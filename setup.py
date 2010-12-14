@@ -27,5 +27,6 @@ setup(name='thet.helsinki.base',
           'setuptools',
           # -*- Extra requirements: -*-
           'Plone',
+          'PILwoTk',
       ],
       )
