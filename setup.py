@@ -20,12 +20,12 @@ setup(name='thet.helsinki.base',
       url='https://github.com/thet/thet.helsinki.base',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['thet.helsinki'],
+      namespace_packages=['thet', 'thet.helsinki'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-	  'Plone',
+          'Plone',
       ],
       )
