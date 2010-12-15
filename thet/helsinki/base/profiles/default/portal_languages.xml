@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="portal_languages" meta_type="Plone Language Tool">
+ <default_language value="de"/>
+ <supported_langs>
+     <element value="de"/>
+     <element value="en"/>
+ </supported_langs>
+</object>

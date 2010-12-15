@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+ <property name="title">Radio Helsinki - Freies Radio Graz</property>
+ <property name="description"></property>
+ <property name="email_from_address" type="string">johannes@raggam.co.at</property>
+ <property name="email_from_name" type="string">Radio Helsinki</property>
+</site>

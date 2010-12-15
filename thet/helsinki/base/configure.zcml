@@ -5,6 +5,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="thet.helsinki.base">
 
+  <include package="plone.app.caching" />
 
   <genericsetup:registerProfile
       name="default"
