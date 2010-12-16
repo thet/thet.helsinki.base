@@ -6,14 +6,22 @@
     i18n_domain="thet.helsinki.base">
 
   <include package="plone.app.caching" />
+  <include package="alm.solrindex" />
 
   <genericsetup:registerProfile
       name="default"
-      title="thet.helsinki.base"
+      title="thet.helsinki.base installation"
       directory="profiles/default"
       description="Installs the thet.helsinki.base package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
-  
+
+  <genericsetup:registerProfile
+      name="setup_content"
+      title="thet.helsinki.base setup base content"
+      directory="profiles/setup_content"
+      description="Installs the thet.helsinki.base content"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

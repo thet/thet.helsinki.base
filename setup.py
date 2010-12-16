@@ -30,5 +30,6 @@ setup(name='thet.helsinki.base',
           'PILwoTk',
           'plone.app.caching',
           'collective.setuphandlertools',
+          'alm.solrindex',
       ],
 )
