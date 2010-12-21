@@ -13,6 +13,13 @@
   <include package="collective.autoresizetextarea" />
   <include package="collective.disqus" />
 
+  <include package="collective.flowplayer" />
+  <include package="collective.gallery" />
+  <include package="zettwerk.fullcalendar" />
+  <include package="Products.LinguaPlone" />
+  <include package="collective.folderishtypes" />
+  <include package="collective.folderishtraverse" />
+
   <!-- Declare that plone.formwidget.captcha provides a Captcha field that
        can be used by plone.app.discussion to add a Captcha field to comment
        forms. -->
