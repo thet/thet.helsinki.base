@@ -41,5 +41,6 @@ setup(name='thet.helsinki.base',
           'Products.LinguaPlone',
           'collective.folderishtypes',
           'collective.folderishtraverse',
+          'collective.uploadify',
       ],
 )

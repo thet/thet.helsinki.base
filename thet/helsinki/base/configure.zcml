@@ -19,6 +19,7 @@
   <include package="Products.LinguaPlone" />
   <include package="collective.folderishtypes" />
   <include package="collective.folderishtraverse" />
+  <include package="collective.uploadify" />
 
   <!-- Declare that plone.formwidget.captcha provides a Captcha field that
        can be used by plone.app.discussion to add a Captcha field to comment
