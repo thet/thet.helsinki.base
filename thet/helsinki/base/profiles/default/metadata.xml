@@ -4,5 +4,6 @@
     <dependencies>
         <dependency>profile-plone.app.caching:default</dependency>
         <dependency>profile-alm.solrindex:default</dependency>
+        <dependency>profile-collective.folderishtypes:default</dependency>
     </dependencies>
 </metadata>
