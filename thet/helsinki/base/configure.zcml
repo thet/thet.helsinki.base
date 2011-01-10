@@ -8,10 +8,10 @@
 
   <include package="plone.app.caching" />
   <include package="alm.solrindex" />
-  <include package="plone.app.discussion" />
-  <include package="plone.formwidget.recaptcha" />
-  <include package="collective.autoresizetextarea" />
   <include package="collective.disqus" />
+  <!-- include package="plone.app.discussion" /-->
+  <!-- include package="plone.formwidget.recaptcha" /-->
+  <!-- include package="collective.autoresizetextarea" /-->
 
   <include package="collective.flowplayer" />
   <include package="collective.gallery" />

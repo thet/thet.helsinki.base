@@ -6,5 +6,7 @@
         <dependency>profile-alm.solrindex:default</dependency>
         <dependency>profile-collective.folderishtypes:default</dependency>
         <dependency>profile-collective.disqus:default</dependency>
+        <dependency>profile-collective.gallery:default</dependency>
+        <dependency>profile-collective.flowplayer:default</dependency>
     </dependencies>
 </metadata>
