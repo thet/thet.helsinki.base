@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-    <version>1.0</version>
-    <dependencies>
-        <dependency>profile-plone.app.caching:default</dependency>
-        <dependency>profile-alm.solrindex:default</dependency>
-        <dependency>profile-collective.folderishtypes:default</dependency>
-        <dependency>profile-collective.disqus:default</dependency>
-        <dependency>profile-collective.gallery:default</dependency>
-        <dependency>profile-collective.flowplayer:default</dependency>
-    </dependencies>
+  <version>1.0</version>
+  <dependencies>
+    <dependency>profile-plone.app.caching:default</dependency>
+    <dependency>profile-alm.solrindex:default</dependency>
+    <dependency>profile-collective.folderishtypes:default</dependency>
+    <dependency>profile-collective.disqus:default</dependency>
+    <dependency>profile-collective.gallery:default</dependency>
+    <dependency>profile-collective.flowplayer:default</dependency>
+    <dependency>profile-sc.social.bookmarks:default</dependency>
+  </dependencies>
 </metadata>

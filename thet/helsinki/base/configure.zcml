@@ -9,10 +9,6 @@
   <include package="plone.app.caching" />
   <include package="alm.solrindex" />
   <include package="collective.disqus" />
-  <!-- include package="plone.app.discussion" /-->
-  <!-- include package="plone.formwidget.recaptcha" /-->
-  <!-- include package="collective.autoresizetextarea" /-->
-
   <include package="collective.flowplayer" />
   <include package="collective.gallery" />
   <include package="zettwerk.fullcalendar" />
@@ -20,11 +16,15 @@
   <include package="collective.folderishtypes" />
   <include package="collective.folderishtraverse" />
   <include package="collective.uploadify" />
+  <include package="sc.social.bookmarks" />
 
+  <!-- include package="plone.app.discussion" /-->
+  <!-- include package="plone.formwidget.recaptcha" /-->
+  <!-- include package="collective.autoresizetextarea" /-->
   <!-- Declare that plone.formwidget.captcha provides a Captcha field that
        can be used by plone.app.discussion to add a Captcha field to comment
        forms. -->
-  <meta:provides feature="plone.app.discussion-captcha" />
+  <!-- meta:provides feature="plone.app.discussion-captcha" /-->
 
   <genericsetup:registerProfile
       name="default"
