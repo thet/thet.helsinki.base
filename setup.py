@@ -43,5 +43,6 @@ setup(name='thet.helsinki.base',
           'collective.folderishtraverse',
           'collective.uploadify',
           'sc.social.bookmarks',
+          'collective.teaser',
       ],
 )
