@@ -18,6 +18,7 @@
   <include package="collective.uploadify" />
   <include package="sc.social.bookmarks" />
   <include package="collective.teaser" />
+  <include package="thet.helsinki.project" />
 
   <!-- include package="plone.app.discussion" /-->
   <!-- include package="plone.formwidget.recaptcha" /-->

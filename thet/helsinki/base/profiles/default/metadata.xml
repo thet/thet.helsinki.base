@@ -10,5 +10,6 @@
     <dependency>profile-collective.flowplayer:default</dependency>
     <dependency>profile-sc.social.bookmarks:default</dependency>
     <dependency>profile-collective.teaser:default</dependency>
+    <dependency>profile-thet.helsinki.project:default</dependency>
   </dependencies>
 </metadata>

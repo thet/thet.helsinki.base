@@ -44,5 +44,6 @@ setup(name='thet.helsinki.base',
           'collective.uploadify',
           'sc.social.bookmarks',
           'collective.teaser',
+          'thet.helsinki.project',
       ],
 )
