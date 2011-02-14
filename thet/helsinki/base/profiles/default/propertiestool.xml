@@ -7,4 +7,20 @@
   <property name="default_language" type="string">de</property>
   <property name="default_charset" type="string">utf-8</property>
  </object>
+ <object name="imaging_properties" meta_type="Plone Property Sheet">
+  <property name="title">Image handling properties</property>
+  <property name="allowed_sizes" type="lines">
+   <element value="column_center 551:551"/>
+   <element value="column_left 181:181"/>
+   <element value="column_right 176:176"/>
+   <element value="huge 960:960"/>
+   <element value="large 774:774"/>
+   <element value="preview 400:400"/>
+   <element value="mini 200:200"/>
+   <element value="thumb 128:128"/>
+   <element value="tile 64:64"/>
+   <element value="icon 32:32"/>
+   <element value="listing 16:16"/>
+  </property>
+ </object>
 </object>
