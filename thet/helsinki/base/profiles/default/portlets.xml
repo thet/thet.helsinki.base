@@ -19,7 +19,18 @@
     key="/"
     type="portlets.Events" />
 
-  <!-- ADD -->
+<!-- ADD -->
+<!-- left column -->
+ <assignment name="navigation" category="context" key="/"
+    manager="plone.leftcolumn" type="portlets.Navigation" visible="True">
+  <property name="topLevel">0</property>
+  <property name="currentFolderOnly">False</property>
+  <property name="name"/>
+  <property name="includeTop">False</property>
+  <property name="bottomLevel">0</property>
+  <property name="root"/>
+ </assignment>
+
   <assignment
     name="review"
     manager="plone.leftcolumn"
@@ -36,6 +47,23 @@
     <property name="count">5</property>
   </assignment>
  
+  <assignment
+      name="teaser-portlet-12
+      category="context"
+      key="/"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">True</property>
+    <property name="prefer_altimage">True</property>
+    <property name="image_size">mini</property>
+  </assignment>
+
   <assignment
       name="rss-freie-radios.net"
       category="context"
@@ -61,6 +89,7 @@
     <property name="timeout">100</property>
   </assignment>
 
+  <!-- right column -->
   <assignment
       name="social-bookmarks-portlet"
       category="context"
@@ -68,48 +97,23 @@
       manager="plone.rightcolumn"
       type="sc.social.bookmarks.sb_portlet"
       visible="True"/>
+
   <assignment
-      name="teaser-portlet"
+      name="teaser-portlet-23
       category="context"
       key="/"
       manager="plone.rightcolumn"
       type="collective.teaser.teaser_portlet"
       visible="True">
     <property name="importance_levels">
-      <element>4</element>
       <element>3</element>
+      <element>4</element>
     </property>
     <property name="num_teasers">1</property>
     <property name="show_title">False</property>
     <property name="prefer_altimage">False</property>
     <property name="image_size">mini</property>
   </assignment>
-  <assignment
-      name="teaser-portlet-1"
-      category="context"
-      key="/"
-      manager="plone.rightcolumn"
-      type="collective.teaser.teaser_portlet"
-      visible="True">
-    <property name="importance_levels">
-      <element>2</element>
-      <element>1</element>
-    </property>
-    <property name="num_teasers">1</property>
-    <property name="show_title">True</property>
-    <property name="prefer_altimage">True</property>
-    <property name="image_size">mini</property>
-  </assignment>
- <assignment name="navigation" category="context" key="/"
-    manager="plone.leftcolumn" type="portlets.Navigation" visible="True">
-  <property name="topLevel">0</property>
-  <property name="currentFolderOnly">False</property>
-  <property name="name"/>
-  <property name="includeTop">False</property>
-  <property name="bottomLevel">0</property>
-  <property name="root"/>
- </assignment>
-
 
  <assignment
    name="gallery-portlet"
@@ -120,7 +124,7 @@
    visible="True">
    <property name="search_portal">True</property>
    <property name="num_pictures">1</property>
-   <property name="image_size">mini</property>
+   <property name="image_size">column_right</property>
   </assignment>
 
 
