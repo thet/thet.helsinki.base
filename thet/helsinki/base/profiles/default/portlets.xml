@@ -109,4 +109,19 @@
   <property name="bottomLevel">0</property>
   <property name="root"/>
  </assignment>
+
+
+ <assignment
+   name="gallery-portlet"
+   category="context"
+   key="/"
+   manager="plone.rightcolumn"
+   type="collective.gallery.show_galleries"
+   visible="True">
+   <property name="search_portal">True</property>
+   <property name="num_pictures">1</property>
+   <property name="image_size">mini</property>
+  </assignment>
+
+
 </portlets>
