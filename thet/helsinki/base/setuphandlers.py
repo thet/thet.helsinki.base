@@ -43,7 +43,7 @@ def setup_content(context):
                 {'type': 'Topic', 'title':u'Vergangenes'},
         ]},
     ]
-    sht.create_item_runner(site, content_structure, logger=logger)
+    sht.create_item_runner(site, content_structure, lang='de', logger=logger)
 
     sht.add_group(site, 'office', roles=['Member'], logger=logger)
     sht.add_group(site, 'programmrat', roles=['Member'], logger=logger)
