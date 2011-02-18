@@ -2,21 +2,111 @@
 <object name="portal_actions" meta_type="Plone Actions Tool"
         xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
- <!-- *** OBJECT *** -->
- <object name="object" meta_type="CMF Action Category">
-  <property name="title"></property>
-  <!-- MULTI UPLOAD -->
-  <object name="upload" meta_type="CMF Action" i18n:domain="wcms.skin.backend">
-   <property name="title" i18n:translate="">Multi Upload</property>
-   <property name="description" i18n:translate="">Mehrere Dateien gleichzeitig hochladen.</property>
-   <property name="url_expr">string:${folder_url}/@@upload</property>
-   <property name="icon_expr"></property>
-   <property name="available_expr"></property>
-   <property name="permissions">
-    <element value="Add portal content"/>
-   </property>
-   <property name="visible">True</property>
+  <object name="site_actions" meta_type="CMF Action Category" purge="True">
+      
+    <object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Site Map</property>
+      <property name="description" i18n:translate=""></property>
+      <property name="url_expr">string:${globals_view/navigationRootUrl}/sitemap</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    
+    <object name="accessibility" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Accessibility</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+          name="url_expr">string:${globals_view/navigationRootUrl}/accessibility-info</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+          <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+    <object name="contact" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Contact</property>
+      <property name="description" i18n:translate=""></property>
+      <property name="url_expr">string:${globals_view/navigationRootUrl}/contact-info</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+          <element value="View"/>
+      </property>
+     <property name="visible">True</property>
+    </object>
+    
+    <object name="logout" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Log out</property>
+      <property name="description" i18n:translate=""></property>
+      <property name="url_expr">string:${globals_view/navigationRootUrl}/logout</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr">python:member is not None</property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+
+    <object name="login" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Log in</property>
+      <property name="description" i18n:translate=""></property>
+      <property name="url_expr">string:${globals_view/navigationRootUrl}/login_form</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr">python:member is None</property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+
+    <object name="preferences" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Preferences</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+          name="url_expr">string:${globals_view/navigationRootUrl}/@@personal-preferences</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr">python:member is not None</property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+
+    <object name="plone_setup" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Site Setup</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+          name="url_expr">string:${portal_url}/plone_control_panel</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+        <element value="Manage portal"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+
   </object>
- </object>
+
+  <!-- *** OBJECT *** -->
+  <object name="object" meta_type="CMF Action Category">
+    <property name="title"></property>
+    <!-- MULTI UPLOAD -->
+    <object name="upload" meta_type="CMF Action" i18n:domain="wcms.skin.backend">
+      <property name="title" i18n:translate="">Multi Upload</property>
+      <property name="description" i18n:translate="">Mehrere Dateien gleichzeitig hochladen.</property>
+      <property name="url_expr">string:${folder_url}/@@upload</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+        <element value="Add portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
 
 </object>
