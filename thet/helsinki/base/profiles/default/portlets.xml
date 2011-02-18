@@ -55,7 +55,7 @@
   </assignment>
  
   <assignment
-      name="teaser-portlet-12"
+      name="teaser-portlet-startsite"
       category="context"
       key="/"
       manager="plone.rightcolumn"
@@ -107,7 +107,7 @@
       visible="True"/>
 
   <assignment
-      name="teaser-portlet-23"
+      name="teaser-portlet-all"
       category="context"
       key="/"
       manager="plone.rightcolumn"
