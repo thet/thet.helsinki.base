@@ -58,7 +58,7 @@
       name="teaser-portlet-startsite"
       category="context"
       key="/"
-      manager="plone.rightcolumn"
+      manager="plone.leftcolumn"
       type="collective.teaser.teaser_portlet"
       visible="True">
     <property name="importance_levels">
@@ -68,7 +68,7 @@
     <property name="num_teasers">1</property>
     <property name="show_title">True</property>
     <property name="prefer_altimage">True</property>
-    <property name="image_size">column_left</property>
+    <property name="image_size">column_center</property>
   </assignment>
 
   <assignment
@@ -114,6 +114,8 @@
       type="collective.teaser.teaser_portlet"
       visible="True">
     <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
       <element>3</element>
       <element>4</element>
     </property>
