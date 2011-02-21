@@ -17,6 +17,10 @@ def setup_content(context):
                  groups=['office'], logger=logger)
 
     content_structure = [
+        {'type': 'Topic', 'title':u'News',
+         'opts': {'setLayout': 'folder_summary_view',
+                  'setDefault': True,}
+        },
         {'type': 'Folder', 'title': u'Programm', 'childs': [
                 {'type': 'Folderish Document', 'title':u'Tagesansicht'},
                 {'type': 'Folderish Document', 'title':u'Wochenansicht'},
@@ -50,6 +54,14 @@ def setup_content(context):
     ]
     sht.create_item_runner(site, content_structure, lang='de', logger=logger)
 
+
+    topic = site['news']
+    topic.limitNumber = True
+    topic.itemCount = 10
+    type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+    type_crit.setValue(['Folderish News Item', 'News Item'])
+    topic.reindexObject()
+    logger.info('configured topic %s' % topic.id)
 
     topic = site['projekte']['aktuelles']
     topic.limitNumber = True
@@ -96,4 +108,3 @@ def setup_content(context):
     date_crit.setOperation('less')
     topic.reindexObject()
     logger.info('configured topic %s' % topic.id)
-
