@@ -57,8 +57,8 @@
   <property name="title">Image handling properties</property>
   <property name="allowed_sizes" type="lines">
    <element value="column_center 551:551"/>
-   <element value="column_left 181:181"/>
-   <element value="column_right 176:176"/>
+   <element value="column_left 181:600"/>
+   <element value="column_right 176:600"/>
    <element value="huge 960:960"/>
    <element value="large 774:774"/>
    <element value="preview 400:400"/>
