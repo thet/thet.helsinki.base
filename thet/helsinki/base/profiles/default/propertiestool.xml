@@ -42,6 +42,7 @@
    <element value="Folderish Event"/>
    <element value="Folderish News Item"/>
    <element value="Teaser"/>
+   <element value="Project"/>
   </property>
   <property name="enable_wf_state_filtering" type="boolean">False</property>
   <property name="wf_states_to_show" type="lines"/>
