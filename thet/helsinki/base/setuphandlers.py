@@ -46,10 +46,12 @@ def setup_content(context):
             },
             {'type': 'Folderish Document', 'title':u'Kontakt'},
         ]},
-        {'type': 'Folder', 'title': u'Projekte', 'childs':[
-                {'type': 'Topic', 'title':u'Aktuelles'},
-                {'type': 'Topic', 'title':u'Kommendes'},
-                {'type': 'Topic', 'title':u'Vergangenes'},
+        {'type': 'Folder', 'title': u'Projekte',
+         'opts': {'setLayout': 'traverse_view',},
+         'childs':[
+             {'type': 'Topic', 'title':u'Aktuelles'},
+             {'type': 'Topic', 'title':u'Kommendes'},
+             {'type': 'Topic', 'title':u'Vergangenes'},
         ]},
     ]
     sht.create_item_runner(site, content_structure, lang='de', logger=logger)
