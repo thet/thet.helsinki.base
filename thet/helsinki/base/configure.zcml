@@ -20,6 +20,11 @@
   <include package="collective.teaser" />
   <include package="thet.helsinki.project" />
 
+  <adapter
+      factory=".portlet_adapters.main_teaser_available"
+      for="plone.portlets.interfaces.ILocalPortletAssignable
+           plone.app.portlets.interfaces.ILeftColumn" />
+
   <!-- include package="plone.app.discussion" /-->
   <!-- include package="plone.formwidget.recaptcha" /-->
   <!-- include package="collective.autoresizetextarea" /-->
