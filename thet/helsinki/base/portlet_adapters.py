@@ -1,10 +1,10 @@
 from Acquisition import aq_parent
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
-from collective.teaser.interfaces import ITeaserAvailable
+from collective.teaser.interfaces import IPortletAvailable
 from zope.interface import implementer
 
-@implementer(ITeaserAvailable)
-def main_teaser_available(context, manager):
+@implementer(IPortletAvailable)
+def main_teaser_available(portlet, manager, context):
     if IPloneSiteRoot.providedBy(context) or\
        IPloneSiteRoot.providedBy(aq_parent(context)) and\
        aq_parent(context).getDefaultPage() == context.id:
@@ -12,10 +12,10 @@ def main_teaser_available(context, manager):
         return True
     return False
 
-@implementer(ITeaserAvailable)
-def portlet_enabled(context, manager):
+@implementer(IPortletAvailable)
+def portlet_enabled(portlet, manager, context):
     return True
 
-@implementer(ITeaserAvailable)
-def portlet_disabled(context, manager):
+@implementer(IPortletAvailable)
+def portlet_disabled(portlet, manager, context):
     return False
