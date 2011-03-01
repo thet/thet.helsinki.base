@@ -10,11 +10,12 @@ def setup_content(context):
     site = context.getSite()
 
     sht.delete_items(site, ('front-page', 'news', 'events'), logger)
+    sht.add_group(site, 'vorstand', roles=['Member'], logger=logger)
     sht.add_group(site, 'office', roles=['Member'], logger=logger)
     sht.add_group(site, 'programmrat', roles=['Member'], logger=logger)
     sht.add_user(site, 'thet', 'thet',
                  email='johannes@raggam.co.at', fullname="Johannes Raggam",
-                 groups=['office'], logger=logger)
+                 groups=['vorstand'], logger=logger)
 
     content_structure = [
         {'type': 'Topic', 'title':u'News',
