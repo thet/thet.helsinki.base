@@ -63,12 +63,16 @@
    <element value="column_right 176:600"/>
    <element value="huge 960:960"/>
    <element value="large 774:774"/>
-   <element value="preview 400:400"/>
-   <element value="mini 200:200"/>
-   <element value="thumb 128:128"/>
+   <element value="preview 551:551"/>
+   <element value="mini 300:300"/>
+   <element value="thumb 200:200"/>
    <element value="tile 64:64"/>
    <element value="icon 32:32"/>
    <element value="listing 16:16"/>
   </property>
+ </object>
+ <object name="gallery_properties" meta_type="Plone Property Sheet">
+  <property name="photo_max_size" type="int">551</property>
+  <property name="thumb_max_size" type="int">80</property>
  </object>
 </object>
