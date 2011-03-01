@@ -51,6 +51,16 @@ class NavtreeQueryBuilder(object):
         if not portlet.includeTop:
             # Only list the applicable types
             query['portal_type'] = utils.typesToList(context)
+        else:
+            query['portal_type'] = [
+                    'Document',
+                    'Folder',
+                    'Folderish Document',
+                    'Folderish Event',
+                    'Folderish News Item',
+                    'Link',
+                    'Project',
+                    'File']
 
         # Apply the desired sort
         sortAttribute = navtree_properties.getProperty('sortAttribute', None)
