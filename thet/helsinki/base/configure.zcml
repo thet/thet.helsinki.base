@@ -53,6 +53,14 @@
       />
 
   <genericsetup:registerProfile
+      name="portlets"
+      title="thet.helsinki.base portlets configuration"
+      directory="profiles/portlets"
+      description="Configures portlets of thet.helsinki.base package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
       name="setup_testdata"
       title="thet.helsinki.base setup test data"
       directory="profiles/setup_testdata"

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone">
+
+  <!-- REMOVE -->
+  <assignment type="portlets.News"
+      remove="True"
+      name="news"
+      manager="plone.rightcolumn"
+      category="context"
+      key="/" />
+  <assignment type="portlets.Events"
+      remove="True"
+      name="events"
+      manager="plone.rightcolumn"
+      category="context"
+      key="/" />
+  <assignment name="navigation"
+      remove="True"
+      manager="plone.leftcolumn"
+      category="context"
+      key="/"
+      type="portlets.Navigation" />
+
+  <!-- ADD -->
+
+  <!-- all -->
+  <assignment name="navigation-main" 
+      type="portlets.Navigation"
+      category="context"
+      key="/"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="name"/>
+    <property name="root"/>
+    <property name="currentFolderOnly">False</property>
+    <property name="includeTop">False</property>
+    <property name="topLevel">0</property>
+    <property name="bottomLevel">4</property>
+  </assignment>
+  <assignment name="review"
+      manager="plone.leftcolumn"
+      category="context"
+      key="/"
+      type="portlets.Review" />
+  <assignment name="recent"
+      manager="plone.leftcolumn"
+      category="context"
+      key="/"
+      type="portlets.Recent"
+      visible="True">
+    <property name="count">5</property>
+  </assignment>
+
+  <!-- startsite -->
+  <assignment name="teaser-portlet-startsite"
+      category="context"
+      key="/news"
+      manager="plone.leftcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">True</property>
+    <property name="image_size">column_center</property>
+  </assignment>
+  <assignment name="rss-freie-radios.net"
+      category="context"
+      key="/news"
+      manager="plone.leftcolumn"
+      type="portlets.rss"
+      visible="True">
+    <property name="count">3</property>
+    <property name="url">http://www.freie-radios.net/portal/podcast.php?radio=43&amp;rss</property>
+    <property name="portlet_title">helsinki auf freie-radios.net</property>
+    <property name="timeout">100</property>
+  </assignment>
+  <assignment name="rss-cba.fro.at"
+      category="context"
+      key="/news"
+      manager="plone.leftcolumn"
+      type="portlets.rss"
+      visible="True">
+    <property name="count">3</property>
+    <property name="url">http://cba.fro.at/stationsrss/4</property>
+    <property name="portlet_title">helsinki auf cba.fro.at</property>
+    <property name="timeout">100</property>
+  </assignment>
+
+  <!-- specific content types -->
+  <assignment name="social-bookmarks-portlet"
+      key="File" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
+  <assignment name="social-bookmarks-portlet"
+      key="Image" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
+  <assignment name="social-bookmarks-portlet"
+      key="Folderish Document" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
+  <assignment name="social-bookmarks-portlet"
+      key="Folderish News Item" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
+  <assignment name="social-bookmarks-portlet"
+      key="Folderish Event" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
+  <assignment name="social-bookmarks-portlet"
+      key="Project" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
+
+  <assignment name="gallery-portlet-context"
+      key="Project" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="collective.gallery.show_galleries">
+    <property name="search_portal">False</property>
+    <property name="num_pictures">1</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  <assignment name="gallery-portlet-context"
+      key="Topic" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="collective.gallery.show_galleries">
+    <property name="search_portal">False</property>
+    <property name="num_pictures">1</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  <assignment name="gallery-portlet-context"
+      key="Folder" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="collective.gallery.show_galleries">
+    <property name="search_portal">False</property>
+    <property name="num_pictures">1</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  <assignment name="gallery-portlet-context"
+      key="Folderish Document" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="collective.gallery.show_galleries">
+    <property name="search_portal">False</property>
+    <property name="num_pictures">1</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  <assignment name="gallery-portlet-context"
+      key="Folderish News Item" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="collective.gallery.show_galleries">
+    <property name="search_portal">False</property>
+    <property name="num_pictures">1</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  <assignment name="gallery-portlet-context"
+      key="Folderish Event" category="content_type" visible="True"
+      manager="plone.rightcolumn" type="collective.gallery.show_galleries">
+    <property name="search_portal">False</property>
+    <property name="num_pictures">1</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+
+
+  <!-- subsite info -->
+  <assignment name="teaser-portlet-info"
+      category="context"
+      key="/info"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">False</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+
+  <!-- subsite programm -->
+  <assignment name="teaser-portlet-programm"
+      category="context"
+      key="/programm"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">False</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  
+  <!-- subsite projekte -->
+  <assignment name="navigation-projekte" 
+      type="portlets.Navigation"
+      category="context"
+      key="/projekte"
+      manager="plone.leftcolumn"
+      visible="True">
+    <property name="name"/>
+    <property name="root"/>
+    <property name="currentFolderOnly">False</property>
+    <property name="includeTop">True</property>
+    <property name="topLevel">1</property>
+    <property name="bottomLevel">4</property>
+  </assignment>
+  <assignment name="teaser-portlet-projekte"
+      category="context"
+      key="/projekte"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">False</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+
+</portlets>
