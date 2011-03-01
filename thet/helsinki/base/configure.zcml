@@ -20,6 +20,8 @@
   <include package="collective.teaser" />
   <include package="thet.helsinki.project" />
 
+  <includeOverrides file="overrides.zcml" />
+
   <adapter
       factory=".portlet_adapters.main_teaser_available"
       for="collective.teaser.browser.common.ITeaserPortlet
