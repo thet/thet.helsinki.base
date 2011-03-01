@@ -50,4 +50,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="setup_testdata"
+      title="thet.helsinki.base setup test data"
+      directory="profiles/setup_testdata"
+      description="Installs the thet.helsinki.base testdata"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

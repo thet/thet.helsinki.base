@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<import-steps>
+  <import-step
+    id="thet.helsinki.base-setup_testdata"
+    handler="thet.helsinki.base.setuphandlers.setup_testdata"
+    title="thet.helsinki.base setup_testdata"
+    version="1.0">
+    <dependency step="thet.helsinki.base-setup_content"/>
+  </import-step>
+</import-steps>

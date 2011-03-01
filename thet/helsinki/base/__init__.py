@@ -1,2 +1,1 @@
-  # -*- extra stuff goes here -*- 
-
+import setuphandlers
