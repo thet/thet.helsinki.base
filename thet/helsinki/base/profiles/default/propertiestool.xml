@@ -75,4 +75,23 @@
   <property name="photo_max_size" type="int">551</property>
   <property name="thumb_max_size" type="int">80</property>
  </object>
+ <object name="sc_social_bookmarks_properties" meta_type="Plone Property Sheet">
+  <property name="bookmark_providers" type="lines" purge="True">
+   <element value="Facebook"/>
+   <element value="Twitter"/>
+   <element value="MySpace"/>
+   <element value="Del.icio.us"/>
+   <element value="Google Bookmarks"/>
+   <element value="Live"/>
+   <element value="Digg"/>
+   <element value="Reddit"/>
+  </property>
+  <property name="enabled_portal_types" type="lines" purge="True">
+   <element value="Project"/>
+   <element value="Folderish Event"/>
+   <element value="Folderish Document"/>
+   <element value="Folderish News Item"/>
+  </property>
+  <property name="use_as_action" type="boolean">False</property>
+ </object>
 </object>

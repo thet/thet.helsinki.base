@@ -22,6 +22,7 @@ def setup_content(context):
          'opts': {'setLayout': 'folder_summary_view',
                   'setDefault': True,}
         },
+        {'type': 'Folderish Document', 'title':u'Livestream'},
         {'type': 'Folder', 'title': u'Programm', 'childs': [
                 {'type': 'Folderish Document', 'title':u'Tagesansicht'},
                 {'type': 'Folderish Document', 'title':u'Wochenansicht'},

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_css" meta_type="Stylesheets Registry">
+ <stylesheet id="public.css" cookable="False" rendering="link"/>
+ <stylesheet id="columns.css" cookable="False" rendering="link"/>
+ <stylesheet id="portlets.css" cookable="False" rendering="link"/>
+ <stylesheet id="deprecated.css" cookable="False" rendering="link"/>
+ <stylesheet id="navtree.css" cookable="False" rendering="link"/>
+ <stylesheet id="invisibles.css" cookable="False" rendering="link"/>
+ <stylesheet id="print.css" cookable="False" rendering="link"/>
+ <stylesheet id="mobile.css" cookable="False" rendering="link"/>
+</object>
