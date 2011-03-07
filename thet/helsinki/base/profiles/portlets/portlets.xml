@@ -69,17 +69,6 @@
     <property name="prefer_altimage">True</property>
     <property name="image_size">column_center</property>
   </assignment>
-  <assignment name="rss-freie-radios.net"
-      category="context"
-      key="/news"
-      manager="plone.leftcolumn"
-      type="portlets.rss"
-      visible="True">
-    <property name="count">3</property>
-    <property name="url">http://www.freie-radios.net/portal/podcast.php?radio=43&amp;rss</property>
-    <property name="portlet_title">helsinki auf freie-radios.net</property>
-    <property name="timeout">100</property>
-  </assignment>
   <assignment name="rss-cba.fro.at"
       category="context"
       key="/news"
@@ -89,6 +78,17 @@
     <property name="count">3</property>
     <property name="url">http://cba.fro.at/stationsrss/4</property>
     <property name="portlet_title">helsinki auf cba.fro.at</property>
+    <property name="timeout">100</property>
+  </assignment>
+  <assignment name="rss-freie-radios.net"
+      category="context"
+      key="/news"
+      manager="plone.leftcolumn"
+      type="portlets.rss"
+      visible="True">
+    <property name="count">3</property>
+    <property name="url">http://www.freie-radios.net/portal/podcast.php?radio=43&amp;rss</property>
+    <property name="portlet_title">helsinki auf freie-radios.net</property>
     <property name="timeout">100</property>
   </assignment>
 
