@@ -33,21 +33,19 @@ def setup_content(context):
                 {'type': 'Folderish Document', 'title':u'Programmflyer'},
         ]},
         {'type': 'Folder', 'title': u'Info', 'childs': [
+            {'type': 'Folderish Document', 'title':u'Kontakt'},
             {'type': 'Folderish Document', 'title':u'Über uns', 'childs':[
                 {'type': 'Folderish Document', 'title':u'Charta der freien Radios'},
                 {'type': 'Folderish Document', 'title':u'Geschichte'},
                 {'type': 'Folderish Document', 'title':u'Gremien'},
+                {'type': 'Folder', 'title':u'Bildergalerien'},
             ]},
-            {'type': 'Folderish Document', 'title':u'Mitmachen', 'childs':[
-                {'type': 'Folderish Document', 'title':u'UnterstützerInnen'},
-            ]},
-            {'type': 'Folderish Document', 'title':u'Downloads'},
+            {'type': 'Folderish Document', 'title':u'Mitmachen'},
+            {'type': 'Folderish Document', 'title':u'Unterstützen'},
             {'type': 'Link', 'title':u'Wiki',
                 'data':{'remoteUrl':u'https://intranet.helsinki.at/wiki/'}
             },
             {'type': 'Folderish Document', 'title':u'Presse'},
-            {'type': 'Folder', 'title':u'Bildergalerien'},
-            {'type': 'Folderish Document', 'title':u'Kontakt'},
         ]},
         {'type': 'Folder', 'title': u'Projekte',
          'opts': {'setLayout': 'traverse_view',},
