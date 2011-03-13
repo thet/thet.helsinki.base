@@ -10,6 +10,8 @@ def setup_content(context):
     site = context.getSite()
 
     sht.delete_items(site, ('front-page', 'news', 'events'), logger)
+    sht.hide_and_retract(site['Members'], hide=False, logger=logger)
+
     sht.add_group(site, 'vorstand', roles=['Member'], logger=logger)
     sht.add_group(site, 'office', roles=['Member'], logger=logger)
     sht.add_group(site, 'programmrat', roles=['Member'], logger=logger)
@@ -22,7 +24,8 @@ def setup_content(context):
          'opts': {'setLayout': 'folder_summary_view',
                   'setDefault': True,}
         },
-        {'type': 'Folderish Document', 'title':u'Livestream'},
+        {'type': 'Folderish Document', 'title':u'Livestream',
+         'data':{'description':LIVESTREAM_DESC, 'text':LIVESTREAM_TEXT}},
         {'type': 'Folder', 'title': u'Programm', 'childs': [
                 {'type': 'Folderish Document', 'title':u'Tagesansicht'},
                 {'type': 'Folderish Document', 'title':u'Wochenansicht'},
@@ -187,7 +190,7 @@ Sendungen von Radio Helsinki sind online verfügbar. Eine Auswahl...
     sht.create_item_runner(ctx, content_structure, lang='de', logger=logger)
 
     # galleries
-    ctx = site['info']['bildergalerien']
+    ctx = site['info']['uber-uns']['bildergalerien']
     content_structure = [
         {'type': 'Folder', 'title': u'Das Radio',
          'opts': {'setLayout': u'gallery.html'},
@@ -349,3 +352,35 @@ Durch Ihre Unterstützung können SIE einen Stein ins Rollen bringen, gemeinsam 
              ]
     sht.create_item_runner(ctx, content_structure, lang='de', logger=logger)
 
+    #livestream
+    ctx = site['livestream']
+    content_structure = [
+        {'type': 'File', 'title': u'live128mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128mp3.m3u'}},
+        {'type': 'File', 'title': u'live128mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128mp3.pls'}},
+        {'type': 'File', 'title': u'live128ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128ogg.m3u'}},
+        {'type': 'File', 'title': u'live128ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128ogg.pls'}},
+        {'type': 'File', 'title': u'live160mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160mp3.m3u'}},
+        {'type': 'File', 'title': u'live160mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160mp3.pls'}},
+        {'type': 'File', 'title': u'live160ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160ogg.m3u'}},
+        {'type': 'File', 'title': u'live160ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160ogg.pls'}},
+        {'type': 'File', 'title': u'live96mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96mp3.m3u'}},
+        {'type': 'File', 'title': u'live96mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96mp3.pls'}},
+        {'type': 'File', 'title': u'live96ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96ogg.m3u'}},
+        {'type': 'File', 'title': u'live96ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96ogg.pls'}},
+    ]
+    sht.create_item_runner(ctx, content_structure, lang='de', logger=logger)
+
+
+LIVESTREAM_DESC = u"""Radio hören im Internet."""
+LIVESTREAM_TEXT = u"""<div class="autoFlowPlayer audio"><a class="external-link" href="http://live.helsinki.at:8088/live160.mp3">http://live.helsinki.at:8088/live160.mp3</a></div>
+<h3>Livestream Playlisten im Ogg/Vorbis Format</h3>
+<p>Hohe Qualität, 160 kpbs: <a class="internal-link" href="live160ogg-m3u"><span class="internal-link">m3u</span></a> / <a class="internal-link" href="live160ogg-pls">pls</a><br />Mittlere Qualität, 128 kpbs: <a class="internal-link" href="live128ogg-m3u">m3u</a> / <a class="internal-link" href="live128ogg-pls">pls</a><br />Niedriege Qualität, 96 kbps: <a class="internal-link" href="live96ogg-m3u">m3u</a> / <a class="internal-link" href="live96ogg-pls">pls</a></p>
+<h3>Livestream Playlisten im MP3 Format</h3>
+<p>Hohe Qualität, 160 kpbs: <a class="internal-link" href="live160mp3-m3u">m3u</a> / <a class="internal-link" href="live160mp3-pls">pls</a><br />Mittlere Qualität, 128 kpbs: <a class="internal-link" href="live128mp3-m3u">m3u</a> / <a class="internal-link" href="live128mp3-pls">pls</a><br />Niedriege Qualität, 96 kbps: <a class="internal-link" href="live96mp3-m3u">m3u</a> / <a class="internal-link" href="live96mp3-pls">pls</a></p>
+<h3>Die direkten Streamadressen im Ogg/Vorbis Format</h3>
+<p><a class="external-link" href="http://live.helsinki.at:8088/live160.ogg">http://live.helsinki.at:8088/live160.ogg</a><br /><a class="external-link" href="http://live.helsinki.at:8088/live128.ogg">http://live.helsinki.at:8088/live128.ogg</a><br /><a class="external-link" href="http://live.helsinki.at:8088/live96.ogg">http://live.helsinki.at:8088/live96.ogg</a></p>
+<h3>Die direkten Streamadressen im MP3 Format</h3>
+<p><a class="external-link" href="http://live.helsinki.at:8088/live160.mp3">http://live.helsinki.at:8088/live160.mp3</a><br /><a class="external-link" href="http://live.helsinki.at:8088/live128.mp3">http://live.helsinki.at:8088/live128.mp3</a><br /><a class="external-link" href="http://live.helsinki.at:8088/live96.mp3">http://live.helsinki.at:8088/live96.mp3</a></p>
+<h3>Programme, die OGG Vorbis-Streams abspielen können</h3>
+<p><a class="external-link" href="http://www.videolan.org/vlc/">VideoLAN</a> (Liunx, Windows, Mac OS X)<br /><a class="external-link" href="http://www.rhythmbox.org">Rhythmbox</a> (Linux)<br /><a class="external-link" href="http://www.winamp.com">WinAmp</a> (Windows)</p>
+"""
