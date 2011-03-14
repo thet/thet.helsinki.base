@@ -355,18 +355,18 @@ Durch Ihre Unterstützung können SIE einen Stein ins Rollen bringen, gemeinsam 
     #livestream
     ctx = site['livestream']
     content_structure = [
-        {'type': 'File', 'title': u'live128mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128mp3.m3u'}},
-        {'type': 'File', 'title': u'live128mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128mp3.pls'}},
-        {'type': 'File', 'title': u'live128ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128ogg.m3u'}},
-        {'type': 'File', 'title': u'live128ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128ogg.pls'}},
-        {'type': 'File', 'title': u'live160mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160mp3.m3u'}},
-        {'type': 'File', 'title': u'live160mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160mp3.pls'}},
-        {'type': 'File', 'title': u'live160ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160ogg.m3u'}},
-        {'type': 'File', 'title': u'live160ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160ogg.pls'}},
-        {'type': 'File', 'title': u'live96mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96mp3.m3u'}},
-        {'type': 'File', 'title': u'live96mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96mp3.pls'}},
-        {'type': 'File', 'title': u'live96ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96ogg.m3u'}},
-        {'type': 'File', 'title': u'live96ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96ogg.pls'}},
+        {'type': 'File', 'title': u'live128mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128mp3.m3u')}},
+        {'type': 'File', 'title': u'live128mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128mp3.pls')}},
+        {'type': 'File', 'title': u'live128ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128ogg.m3u')}},
+        {'type': 'File', 'title': u'live128ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live128ogg.pls')}},
+        {'type': 'File', 'title': u'live160mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160mp3.m3u')}},
+        {'type': 'File', 'title': u'live160mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160mp3.pls')}},
+        {'type': 'File', 'title': u'live160ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160ogg.m3u')}},
+        {'type': 'File', 'title': u'live160ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live160ogg.pls')}},
+        {'type': 'File', 'title': u'live96mp3.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96mp3.m3u')}},
+        {'type': 'File', 'title': u'live96mp3.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96mp3.pls')}},
+        {'type': 'File', 'title': u'live96ogg.m3u', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96ogg.m3u')}},
+        {'type': 'File', 'title': u'live96ogg.pls', 'data':{'file':sht.load_file(globals(), 'data/livestream/live96ogg.pls')}},
     ]
     sht.create_item_runner(ctx, content_structure, lang='de', logger=logger)
 
