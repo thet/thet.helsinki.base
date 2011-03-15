@@ -31,7 +31,7 @@
     <object name="contact" meta_type="CMF Action" i18n:domain="plone">
       <property name="title" i18n:translate="">Contact</property>
       <property name="description" i18n:translate=""></property>
-      <property name="url_expr">string:${globals_view/navigationRootUrl}/contact-info</property>
+      <property name="url_expr">string:${globals_view/navigationRootUrl}/info/kontakt</property>
       <property name="icon_expr"></property>
       <property name="available_expr"></property>
       <property name="permissions">

@@ -15,6 +15,7 @@ def setup_content(context):
     sht.add_group(site, 'vorstand', roles=['Member'], logger=logger)
     sht.add_group(site, 'office', roles=['Member'], logger=logger)
     sht.add_group(site, 'programmrat', roles=['Member'], logger=logger)
+    sht.add_group(site, 'technik', roles=['Member'], logger=logger)
     sht.add_user(site, 'thet', 'thet',
                  email='johannes@raggam.co.at', fullname="Johannes Raggam",
                  groups=['vorstand'], logger=logger)
