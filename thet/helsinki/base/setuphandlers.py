@@ -37,9 +37,11 @@ def setup_content(context):
                 {'type': 'Folderish Document', 'title':u'Programmflyer'},
         ]},
         {'type': 'Folder', 'title': u'Info', 'childs': [
-            {'type': 'Folderish Document', 'title':u'Kontakt'},
+            {'type': 'Folderish Document', 'title':u'Kontakt',
+             'data':{'text':KONTAKT_TEXT}},
             {'type': 'Folderish Document', 'title':u'Über uns', 'childs':[
-                {'type': 'Folderish Document', 'title':u'Charta der freien Radios'},
+                {'type': 'Folderish Document', 'title':u'Charta der freien Radios',
+                 'data':{'text':CHARTA_TEXT}},
                 {'type': 'Folderish Document', 'title':u'Geschichte'},
                 {'type': 'Folderish Document', 'title':u'Gremien'},
                 {'type': 'Folder', 'title':u'Bildergalerien'},
@@ -384,4 +386,47 @@ LIVESTREAM_TEXT = u"""<div class="autoFlowPlayer audio"><a class="external-link"
 <p><a class="external-link" href="http://live.helsinki.at:8088/live160.mp3">http://live.helsinki.at:8088/live160.mp3</a><br /><a class="external-link" href="http://live.helsinki.at:8088/live128.mp3">http://live.helsinki.at:8088/live128.mp3</a><br /><a class="external-link" href="http://live.helsinki.at:8088/live96.mp3">http://live.helsinki.at:8088/live96.mp3</a></p>
 <h3>Programme, die OGG Vorbis-Streams abspielen können</h3>
 <p><a class="external-link" href="http://www.videolan.org/vlc/">VideoLAN</a> (Liunx, Windows, Mac OS X)<br /><a class="external-link" href="http://www.rhythmbox.org">Rhythmbox</a> (Linux)<br /><a class="external-link" href="http://www.winamp.com">WinAmp</a> (Windows)</p>
+"""
+
+KONTAKT_TEXT = u"""
+<h2>Radio Helsinki - Verein Freies Radio Steiermark</h2>
+<p>Griesgasse 8, 8020 Graz<br />
+Tel: + 43 316 830 880 (Sendestudio: Durchwahl 80)<br />
+Fax: + 43 316 830 880 84</p>
+<p><b>Büro:</b> <a class="mail-link" href="mailto:office@helsinki.at">office@helsinki.at</a><br />
+<b>Programmrat:</b> <a class="mail-link" href="mailto:programmrat@helsinki.at">programmrat@helsinki.at</a><br />
+<b>Technik:</b> <a class="mail-link" href="mailto:technik@helsinki.at">technik@helsinki.at</a><br />
+<b>Vorstand:</b> <a class="mail-link" href="mailto:vorstand@helsinki.at">vorstand@helsinki.at</a><br />
+<b>Musikredaktion:</b> <a class="mail-link" href="mailto:musikredaktion@helsinki.at">musikredaktion@helsinki.at</a><br />
+<b>Workshops:</b> <a class="mail-link" href="mailto:office@helsinki.at">office@helsinki.at</a><br /></p>
+"""
+
+CHARTA_TEXT = u"""
+<p><b>I. Grundsätze des <a class="external-link" href="http://www.freie-radios.at/">Verbandes Freier Radios Österreich</a></b></p>
+<p>Freie Radios sind unabhängige, gemeinnützige, nicht-kommerzielle  und auf kommunikativen Mehrwert ausgerichtete Organisationen, die einen  allgemeinen und freien Zugang zu Sendeflächen für Rundfunkverstaltungen  bereitstellen, um die freie Meinungsäußerung zu fördern. Als dritte  Säule der Rundfunklandschaft neben öffentlicht-rechtlichen und  kommmerziell-privaten RundfunkveranstalterInnen erweitern Freie Radios  die Meinungsvielfalt.</p>
+<p><b>Offener Zugang / Public Access</b></p>
+<p>Freie Radios geben allen Personen und Gruppen innerhalb des  gesetzlichen Rahmens die Möglichkeit zur unzensierten Meinungsäußerung  und Informationsvermittlung. Vorrang haben dabei soziale, kulturelle und  ethnische Minderheiten sowie solche Personen und Gruppen, die wegen  ihrer gesellschaftlichen Marginalisierung oder sexistischen oder  rassistischen Diskriminierung in den Medien kaum oder nicht zu Wort kommen.</p>
+<p><b>Partizipation</b></p>
+<p>Freie Radios stellen Trainings-, Produktions- und  Verteilungsmöglichkeiten zur Verfügung. Sie bilden Plattformen lokaler  und (über-)regionaler Musik-, Kunst- und Kulturproduktion für  gesellschaftspolitische Initiativen und für gesellschaftlich oder medial  marginalisierte Communities. Sie laden ihre HörerInnen zur aktiven  Beteiligung ein, spiegeln die gesellschaftliche, kulturelle und  sprachliche Vielfalt ihrer Ausstrahlungsgebiete wider und fördern den  interkulturellen Dialog.</p>
+<p><b>Gemeinnützigkeit / Nichtkommerzialität</b></p>
+<p>Freie Radios sind kein Privateigentum eines/r Einzelnen, sondern  sind gemeinsam von ihren NutzerInnen getragene Organisationsformen, die  vor allem dem Prinzip der Gemeinnützigkeit unterliegen. Ihre Tätigkeit  ist nicht auf Gewinn ausgerichtet und verfolgt das Prinzip eines  werbefreien Radios ohne kommerzielle Produktwerbung. Um die Existenz und  Unabhängigkeit gewährleisten zu können, braucht es eine Diversifizierung der  Einnahmequellen. Die Finanzierung erfolgt durch Eigenleistungen wie  Projekte oder Kooperationen, öffentliche Förderungen, Mitgliedsbeiträge  und Spenden oder auch Sponsoring.</p>
+<p><b>Transparenz / Organisation</b></p>
+<p>In Freien Radios sind die Organisation und die Auswahlkriterien  für Sendeinhalte durchschaubar und nachprüfbar zu halten. Die  TrägerInnen Freier Radios handhaben ihr Management, ihre  Programmgestaltung und ihre Beschäftigungspraxis so, dass sie jede Form  der Diskriminierung ausschließt; sie sind dabei gegenüber allen  UnterstützerInnen, dem Personal und den ehrenamtlichen MitarbeiterInnen offen und verantwortlich. Sie fördern  die Mitwirkung von MigrantInnen und Frauen in allen Bereichen.</p>
+<p><b>Lokalbezug</b></p>
+<p>Freie Radios verstehen sich als Kommunikationsmittel im lokalen  und regionalen Raum und unterstützen die regionale Entwicklung. Damit  fungieren freie Radios auch als fördernde Plattformen für  regionalbezogene Kunst- und Kulturschaffende, in denen es für  KünstlerInnen Auftritts- und Verbreitungsmöglichkeiten gibt. Darüber  hinaus findet eine Auseinandersetzung mit überregionalen und  internationalen Themen statt. Freie Radios arbeiten aktiv zusammen, z.B. durch Programmaustausch oder  die gemeinsame Realisierung von medialen, kulturellen, künstlerischen  oder gesellschaftspolitischen Projekten.</p>
+<p><b>Unabhängigkeit</b></p>
+<p>Freie Radios sind im Besitz, in der Organisationsform, in der  Herausgabe und in der Programmgestaltung unabhängig von staatlichen,  kommerziellen und religiösen Institutionen und politischen Parteien.</p>
+<p><b>Anspruch</b></p>
+<p>Freie Radios fördern eine selbstbestimmte, solidarische und  emanzipatorische Gesellschaft. Sie wenden sich gegen jede Form der  Diskriminierung aufgrund von Geschlecht oder sexueller Orientierung,  Herkunft, Abstammung Hautfarbe oder Ethnie, religiöser oder politischer  Anschauung, aufgrund körperlicher oder geistiger Fähigkeiten, sozialer  Herkunft, Sprache oder Alter. Sie treten für freie Meinungsäußerung,  Meinungsvielfalt, Gleichberechtigung, Menschenwürde und Demokratie ein.</p>
+<p><br /> <b>II. Forderungen des Verbandes Freier Radios Österreich</b></p>
+<p><b>Gesetzliche Anerkennung</b></p>
+<p>Aufgrund ihrer Leistungen im öffentlichen Interesse müssen Freie  Radios im Privatradiogesetz und KommAustria-Gesetz als eigene Kategorie  anerkannt werden. Diese Leistungen sind insbesondere der Offene Zugang  zu Sendeflächen im Rundfunk, die publizistische Ergänzung im lokalen und  regionalen Bereich sowie die Vermittlung von Medienkompetenz.</p>
+<p><b>Freie-Radios-Fonds</b></p>
+<p>Die Leistungen im öffentlichen Interesse, die die Freien Radios  erfüllen, müssen öffentlich gefördert werden. Die Freien Radios fordern  die Einrichtung eines "Freie-Radios-Fonds", der aus jenem Teil der  Rundfunkgebühren gespeist wird, der nicht dem ORF zufließt  ("Gebührensplitting"). Bezüglich der urheberrechtlichen Abgaben genießen  Freie Radios einen Sonderstatus, der ihrem gemeinnützigen Charakter  entspricht.</p>
+<p><b>Triales Rundfunksystem und BeauftragteR für Freie Medien</b></p>
+<p>Die Dreiteilung des Rundfunksystems in öffentlich-rechtliche,  privat- kommerzielle und gemeinnützige Freie Rundfunkveranstalter  (triales Rundfunksystem) muss sich (strukturell in der Konstruktion) in  der Struktur der Medienbehörde sowie bei der Lizenzvergabe  widerspiegeln. In Sendegebieten, wo Bedarf vorhanden ist, muss die  Versorgung mit Freiem Radio durch Vorrang bei der Lizenzvergabe  gewährleistet sein. Als AnsprechpartnerIn für Forschung und Entwicklung  im Dritten Rundfunksektor muss in der Medienbehörde einE BeauftragteR  für Freie Medien installiert werden. Die Medienforschung muss künftig  verstärkt auf die gesellschaftlichen Leistungen zugangsoffener Freier  Radios eingehen.</p>
+<p><b>Journalistische Gleichberechtigung</b></p>
+<p>MitarbeiterInnen Freier Radios sind frei in ihrer Recherche und sind JournalistInnen anderer Medien gleichgestellt.</p>
+<p><b>Mitbestimmung und Stellungnahme</b></p>
+<p>Bei Erarbeitung von Gesetzen, Gesetzesänderungen und  internationalen Verträgen, die das Medien- und Fernmeldewesen betreffen,  haben die VertreterInnen der Freien Radios das Recht auf Mitbestimmung  und Stellungnahme.</p>
 """
