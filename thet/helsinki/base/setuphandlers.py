@@ -267,14 +267,26 @@ Sendungen von Radio Helsinki sind online verfügbar. Eine Auswahl...
              'end': '2011-07-01 00:00:00 UTC',
              'image':sht.load_file(globals(), 'data/cocoyoc/bik.jpg'),
              'text':u"""
-<p><a href="http://cba.fro.at/show.php?lang=de&amp;query=sort&amp;redakt=512&amp;sort=1">Download der Sendungen</a><br /> <a href="http://cba.fro.at/rss/entriesfrombroadcast.rss.php?sendungen_id=877">RSS Feed der Sendungen</a><br /> <a href="abschlussbericht_eza_stmk_land_web-pdf">Download des Projektberichts 2010</a></p>
+<p><a href="http://cba.fro.at/series/877">Download der Sendungen</a><br/>
+<a href="http://cba.fro.at/seriesrss/877">RSS Feed der Sendungen</a><br />
+<a href="abschlussbericht_eza_stmk_land_web-pdf">Download des Projektberichts 2010</a></p>
 <p><b>Entwicklungspolitische Vereine berichten:</b> ...ein  Schulprojekt im Himalaya und im Kongo... Dorfentwicklung und  Solarenergie für Spitäler in Tansania... Wasserkraft für Kuba... ein  Medienprojekt über sexuellen Missbrauch und Stärkung von Frauenrechten  in Nicaragua... ein Brunnenprojekt in Burkina Faso...</p>
 <p><b>Freies Radio – Medium der Zivilgesellschaft:</b> Die  Vereine gehören keinen großen (internationalen NGOs, staatlichen oder  kirchlichen) Institutionen an. Die Vereine haben gemeinsam mit Radio  Helsinki Sendungen aus den Projektregionen gestaltet, um alternative und  direkte Informationen (aus der Praxis) zur Entwicklungszusammenarbeit  einer interessierten Öffentlichkeit näher zu bringen.</p>
 <p><b>Entwicklungspolitische Praxis</b> findet in pluralen  Räumen statt und hat basale Bedürfnisse zum Inhalt: „Lebensmittel“ sind  Nahrung, Wasser, Medizin, aber auch soziokulturelle oder individuelle  Selbstbestimmung und Bildung. Näher betrachtet, zeigen sich Differenzen,  wie diese Ziele erreicht werden können - sprich: was bedeutet  Entwicklung?</p>
 <p><b>COCOYOC - Kontext</b> (Entwicklungspolitische und  Globale Diskurse); Entwicklungspolitische Praxis ist immer unter den jeweils "herrschenden  Verhältnissen" zu verstehen. Auf die historischen, sozialen,  ökonomischen, kulturellen Dimensionen gehen wir in speziellen  Themensendungen ein. Diese Sendungen sind als "Cocoyoc - Kontext"  gekennzeichnet. Zudem treffen sich die Projektvereine, wo wir unsere  Praxis diskutieren und reflektieren.</p>
 <p><b>Reichweite der Sendungen:</b> Alle Sendungen sind zum  freien Download (Creative Commons) und für die Verbreitung auf anderen  Freien Radios ins Internet gestellt worden.  Wir danken den Freien  Radios für die Übernahmen von „Cocoyoc Sendungen“:</p>
-<p>Campusradio (St. Pölten), <a href="http://www.campusradio.at/">http://www.campusradio.at/</a><br /> Freirad (Innsbruck), <a href="http://www.freirad.at/">http://www.freirad.at/</a><br /> Radiofabrik (Salzburg), <a href="http://www.radiofabrik.at/">http://www.radiofabrik.at/</a><br /> Radio Fro (Linz), <a href="http://www.fro.at/">http://www.fro.at/</a><br /> Proton (Bregenz), <a href="http://www.radioproton.at/">http://www.radioproton.at/</a><br /> Radio Orange (Wien), <a href="http://o94.at/">http://o94.at/</a><br /> coloRadio (Dresden), <a href="http://coloradio.org/">http://coloradio.org/</a><br /> Dreyeckland (Freiburg/Breisgau), <a href="http://www.rdl.de/">http://www.rdl.de/</a><br /> Radio F.R.E.I. (Erfurt), <a href="http://www.radio-frei.de/">http://www.radio-frei.de/</a></p>
-
+<p>Campusradio (St. Pölten), <a href="http://www.campusradio.at/">http://www.campusradio.at/</a><br />
+Freirad (Innsbruck), <a href="http://www.freirad.at/">http://www.freirad.at/</a><br />
+Radiofabrik (Salzburg), <a href="http://www.radiofabrik.at/">http://www.radiofabrik.at/</a><br />
+Radio Fro (Linz), <a href="http://www.fro.at/">http://www.fro.at/</a><br />
+Proton (Bregenz), <a href="http://www.radioproton.at/">http://www.radioproton.at/</a><br />
+Radio Orange (Wien), <a href="http://o94.at/">http://o94.at/</a><br />
+coloRadio (Dresden), <a href="http://coloradio.org/">http://coloradio.org/</a><br />
+Dreyeckland (Freiburg/Breisgau), <a href="http://www.rdl.de/">http://www.rdl.de/</a><br />
+Radio F.R.E.I. (Erfurt), <a href="http://www.radio-frei.de/">http://www.radio-frei.de/</a><br />
+Radio Lohro (Rostock), <a href="http://www.lohro.de/">http://www.lohro.de/</a><br />
+Radio Lora (Zürich), <a href="http://www.lora.ch/">http://www.lora.ch/</a><br />
+</p>
 
 <h2>Die Projektvereine im Überblick</h2>
 
