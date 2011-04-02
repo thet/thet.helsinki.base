@@ -56,9 +56,12 @@ def setup_content(context):
         {'type': 'Folder', 'title': u'Projekte',
          'opts': {'setLayout': 'traverse_view',},
          'childs':[
-             {'type': 'Topic', 'title':u'Aktuelles'},
-             {'type': 'Topic', 'title':u'Kommendes'},
-             {'type': 'Topic', 'title':u'Vergangenes'},
+             {'type': 'Topic', 'title':u'Aktuelles',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'Kommendes',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'Vergangenes',
+              'opts': {'setLayout': 'folder_summary_view',}},
         ]},
     ]
     sht.create_item_runner(site, content_structure, lang='de', logger=logger)
