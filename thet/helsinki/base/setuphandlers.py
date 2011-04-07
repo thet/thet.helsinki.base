@@ -28,12 +28,12 @@ def setup_content(context):
         {'type': 'Folderish Document', 'title':u'Livestream',
          'data':{'description':LIVESTREAM_DESC, 'text':LIVESTREAM_TEXT}},
         {'type': 'Folder', 'title': u'Programm', 'childs': [
-                {'type': 'Folder', 'title':u'Tagesansicht'},
-                {'type': 'Folder', 'title':u'Wochenansicht'},
-                {'type': 'Folder', 'title':u'Sendungen'},
-                {'type': 'Folder', 'title':u'SendungsmacherInnen'},
-                {'type': 'Folder', 'title':u'Tipps'},
-                {'type': 'Folder', 'title':u'Programmschienen'},
+            {'type': 'Folder', 'id':u'today', 'title':u'Tagesansicht'},
+                {'type': 'Folder', 'id':u'week', 'title':u'Wochenansicht'},
+                {'type': 'Folder', 'id':u'shows', 'title':u'Sendungen'},
+                {'type': 'Folder', 'id':u'hosts', 'title':u'SendungsmacherInnen'},
+                {'type': 'Folder', 'id':u'tips', 'title':u'Tipps'},
+                {'type': 'Folder', 'id':u'topics', 'title':u'Programmschienen'},
                 {'type': 'Folderish Document', 'title':u'Programmflyer'},
         ]},
         {'type': 'Folder', 'title': u'Info', 'childs': [
