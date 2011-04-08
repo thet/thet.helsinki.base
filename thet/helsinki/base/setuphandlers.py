@@ -35,6 +35,9 @@ def setup_content(context):
                 {'type': 'Folder', 'id':u'tips', 'title':u'Tipps'},
                 {'type': 'Folder', 'id':u'topics', 'title':u'Programmschienen'},
                 {'type': 'Folderish Document', 'title':u'Programmflyer'},
+                {'type': 'Link', 'title':u'Programmverwaltung',
+                    'data':{'remoteUrl':u'https://pv.helsinki.at/admin/'}
+                    'opts': {'workflow': None,}}, # leave private
         ]},
         {'type': 'Folder', 'title': u'Info', 'childs': [
             {'type': 'Folderish Document', 'title':u'Kontakt',
