@@ -54,7 +54,8 @@ def setup_content(context):
             {'type': 'Link', 'title':u'Wiki',
                 'data':{'remoteUrl':u'https://intranet.helsinki.at/wiki/'}
             },
-            {'type': 'Folderish Document', 'title':u'Presse'},
+            {'type': 'Folderish Document', 'title':u'Logo'},
+            {'type': 'Folderish Document', 'title':u'Impressum'},
         ]},
         {'type': 'Folder', 'title': u'Projekte',
          'opts': {'setLayout': 'traverse_view',},
