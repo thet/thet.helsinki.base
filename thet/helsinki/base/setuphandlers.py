@@ -33,7 +33,6 @@ def setup_content(context):
                 {'type': 'Folder', 'id':u'shows', 'title':u'Sendungen'},
                 {'type': 'Folder', 'id':u'hosts', 'title':u'SendungsmacherInnen'},
                 {'type': 'Folder', 'id':u'tips', 'title':u'Tipps'},
-                {'type': 'Folder', 'id':u'topics', 'title':u'Programmschienen'},
                 {'type': 'Folderish Document', 'title':u'Programmflyer'},
                 {'type': 'Link', 'title':u'Programmverwaltung',
                     'data':{'remoteUrl':u'https://pv.helsinki.at/admin/'},
