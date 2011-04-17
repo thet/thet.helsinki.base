@@ -59,7 +59,7 @@ def setup_content(context):
         ]},
         {'type': 'Folder', 'title': u'Projekte',
          'opts': {'setLayout': 'folder_summary_view',
-                  #'setLocallyAllowedTypes': ['Project'],
+                  'setLocallyAllowedTypes': ['Project'],
                   'setImmediatelyAddableTypes': ['Project']},
          'childs':[
              {'type': 'Topic', 'title':u'Aktuelles',
