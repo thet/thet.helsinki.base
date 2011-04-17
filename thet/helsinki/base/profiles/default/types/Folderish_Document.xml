@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <object name="Folderish Document"
-   meta_type="Factory-based Type Information with dynamic views"
-   i18n:domain="collective.folderishtypes" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  meta_type="Factory-based Type Information with dynamic views">
  <property name="allow_discussion">True</property>
  <property name="view_methods" purge="False">
   <element value="traverse_view"/>

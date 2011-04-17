@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import collective.setuphandlertools as sht
 import logging
+from Products.ATContentTypes.lib import constraintypes
 logger = logging.getLogger("thet.helsinki.base")
 
 def setup_content(context):
@@ -57,7 +58,9 @@ def setup_content(context):
             {'type': 'Folderish Document', 'title':u'Impressum'},
         ]},
         {'type': 'Folder', 'title': u'Projekte',
-         'opts': {'setLayout': 'traverse_view',},
+         'opts': {'setLayout': 'folder_summary_view',
+                  #'setLocallyAllowedTypes': ['Project'],
+                  'setImmediatelyAddableTypes': ['Project']},
          'childs':[
              {'type': 'Topic', 'title':u'Aktuelles',
               'opts': {'setLayout': 'folder_summary_view',}},
@@ -70,6 +73,10 @@ def setup_content(context):
     sht.create_item_runner(site, content_structure, lang='de', logger=logger)
 
 
+    #site.setConstrainTypesMode(constraintypes.ENABLED)
+    #site.setLocallyAllowedTypes(item['opts']['setLocallyAllowedTypes'])
+    #site.setImmediatelyAddableTypes(['Teaser', 'Folderish News Item',])
+    import pdb;pdb.set_trace()
     try:
         topic = site['news']
         topic.limitNumber = True
