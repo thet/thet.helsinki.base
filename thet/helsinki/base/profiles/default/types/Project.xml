@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <object name="Project"
   meta_type="Factory-based Type Information with dynamic views">
- <property name="global_allow">False</property>
  <property name="allow_discussion">True</property>
 </object>
