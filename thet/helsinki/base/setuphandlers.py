@@ -28,16 +28,18 @@ def setup_content(context):
         },
         {'type': 'Folderish Document', 'title':u'Livestream',
          'data':{'description':LIVESTREAM_DESC, 'text':LIVESTREAM_TEXT}},
-        {'type': 'Folder', 'title': u'Programm', 'childs': [
-            {'type': 'Folder', 'id':u'today', 'title':u'Tagesansicht'},
-                {'type': 'Folder', 'id':u'week', 'title':u'Wochenansicht'},
-                {'type': 'Folder', 'id':u'shows', 'title':u'Sendungen'},
-                {'type': 'Folder', 'id':u'hosts', 'title':u'SendungsmacherInnen'},
-                {'type': 'Folder', 'id':u'tips', 'title':u'Tipps'},
-                {'type': 'Folderish Document', 'title':u'Programmflyer'},
-                {'type': 'Link', 'title':u'Programmverwaltung',
-                    'data':{'remoteUrl':u'https://pv.helsinki.at/admin/'},
-                    'opts': {'workflow': None,}}, # leave private
+        {'type': 'Folder', 'title': u'Programm',
+         'opts': {'setLayout': 'traverse_view',},
+         'childs': [
+             {'type': 'Folder', 'id':u'today', 'title':u'Tagesansicht'},
+             {'type': 'Folder', 'id':u'week', 'title':u'Wochenansicht'},
+             {'type': 'Folder', 'id':u'shows', 'title':u'Sendungen'},
+             {'type': 'Folder', 'id':u'hosts', 'title':u'SendungsmacherInnen'},
+             {'type': 'Folder', 'id':u'tips', 'title':u'Tipps'},
+             {'type': 'Folderish Document', 'title':u'Programmflyer'},
+             {'type': 'Link', 'title':u'Programmverwaltung',
+              'data':{'remoteUrl':u'https://pv.helsinki.at/admin/'},
+              'opts': {'workflow': None,}}, # leave private
         ]},
         {'type': 'Folder', 'title': u'Info', 'childs': [
             {'type': 'Folderish Document', 'title':u'Kontakt',
@@ -58,7 +60,7 @@ def setup_content(context):
             {'type': 'Folderish Document', 'title':u'Impressum'},
         ]},
         {'type': 'Folder', 'title': u'Projekte',
-         'opts': {'setLayout': 'folder_summary_view',
+         'opts': {'setLayout': 'traverse_view',
                   'setLocallyAllowedTypes': ['Project'],
                   'setImmediatelyAddableTypes': ['Project']},
          'childs':[
