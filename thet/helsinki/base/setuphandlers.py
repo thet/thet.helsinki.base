@@ -24,8 +24,9 @@ def setup_content(context):
     content_structure = [
         {'type': 'Topic', 'title':u'News',
          'opts': {'setLayout': 'folder_summary_view',
-                  'setDefault': True,}
-        },
+                  'setDefault': True,}},
+        {'type': 'Folder', 'title':u'Teasers',
+         'opts': {'setLayout': 'folder_summary_view'}},
         {'type': 'Folderish Document', 'title':u'Livestream',
          'data':{'description':LIVESTREAM_DESC, 'text':LIVESTREAM_TEXT}},
         {'type': 'Folder', 'title': u'Programm',
@@ -41,9 +42,9 @@ def setup_content(context):
               'data':{'remoteUrl':u'https://pv.helsinki.at/admin/'},
               'opts': {'workflow': None,}}, # leave private
         ]},
-        {'type': 'Folder', 'title': u'Info', 'childs': [
-            {'type': 'Folderish Document', 'title':u'Kontakt',
-             'data':{'text':KONTAKT_TEXT}},
+        {'type': 'Folder', 'title': u'Info',
+         'opts': {'setLayout': 'traverse_view',},
+         'childs': [
             {'type': 'Folderish Document', 'title':u'Über uns', 'childs':[
                 {'type': 'Folderish Document', 'title':u'Charta der freien Radios',
                  'data':{'text':CHARTA_TEXT}},
@@ -57,6 +58,8 @@ def setup_content(context):
                 'data':{'remoteUrl':u'https://intranet.helsinki.at/wiki/'}
             },
             {'type': 'Folderish Document', 'title':u'Logo'},
+            {'type': 'Folderish Document', 'title':u'Kontakt',
+             'data':{'text':KONTAKT_TEXT}},
             {'type': 'Folderish Document', 'title':u'Impressum'},
         ]},
         {'type': 'Folder', 'title': u'Projekte',
