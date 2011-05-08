@@ -74,11 +74,6 @@ def setup_content(context):
     ]
     sht.create_item_runner(site, content_structure, lang='de', logger=logger)
 
-
-    #site.setConstrainTypesMode(constraintypes.ENABLED)
-    #site.setLocallyAllowedTypes(item['opts']['setLocallyAllowedTypes'])
-    #site.setImmediatelyAddableTypes(['Teaser', 'Folderish News Item',])
-    import pdb;pdb.set_trace()
     try:
         topic = site['news']
         topic.limitNumber = True
