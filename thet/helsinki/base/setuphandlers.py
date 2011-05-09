@@ -26,8 +26,10 @@ def setup_content(context):
          'opts': {'setLayout': 'folder_summary_view',
                   'setDefault': True,}},
         {'type': 'Folder', 'title':u'Teasers',
-         'opts': {'setLayout': 'folder_summary_view'}},
-        {'type': 'Folderish Document', 'title':u'Livestream',
+         'opts': {'setLayout': 'folder_summary_view',
+                  'setLocallyAllowedTypes': ['Teaser'],
+                  'setImmediatelyAddableTypes': ['Teaser']}},
+         {'type': 'Folderish Document', 'title':u'Livestream',
          'data':{'description':LIVESTREAM_DESC, 'text':LIVESTREAM_TEXT}},
         {'type': 'Folder', 'title': u'Programm',
          'opts': {'setLayout': 'traverse_view',},
@@ -43,7 +45,8 @@ def setup_content(context):
               'opts': {'workflow': None,}}, # leave private
         ]},
         {'type': 'Folder', 'title': u'Info',
-         'opts': {'setLayout': 'traverse_view',},
+         'opts': {'setLayout': 'traverse_view',
+                  'setImmediatelyAddableTypes': ['Folderish Document', 'Folderish Event', 'File', 'Folder', 'Image', 'Link', 'Topic']},
          'childs': [
             {'type': 'Folderish Document', 'title':u'Über uns', 'childs':[
                 {'type': 'Folderish Document', 'title':u'Charta der freien Radios',
@@ -64,7 +67,7 @@ def setup_content(context):
         ]},
         {'type': 'Folder', 'title': u'Projekte',
          'opts': {'setLayout': 'traverse_view',
-                  'setLocallyAllowedTypes': ['Project'],
+                  'setLocallyAllowedTypes': ['Project', 'Topic'],
                   'setImmediatelyAddableTypes': ['Project']},
          'childs':[
              {'type': 'Topic', 'title':u'Aktuelles',
@@ -159,38 +162,7 @@ def setup_testdata(context):
              'imageCaption':u'Wir setzen uns nieder!',
              'text':u"""
 <p><b>"Wir setzen uns nieder!"</b> war das Motto, unter dem sich am  Samstag, 12. Februar 2011 ab 11 Uhr mehrere hundert Menschen in der  Grazer Herrengasse vor dem Landhaus zum Protest trafen. <br /><br /> Die Plattform ist ein überparteilicher Zusammenschluss von Initiativen  gegen die Verschärfung des Landessicherheitsgesetzes und die Einführung  eines Bettelverbotes in der Steiermark. Am Dienstag, den 15. Februar,  wurde ein generelles Bettelverbot im steirischen Landtag beschlossen.  <br /><br /> Das können wir nicht hinnehmen. Dagegen stehen wir auf. Dagegen setzen wir uns nieder!  <br /><br /> * Die Straße gehört uns allen!<br /> * Betteln ist ein Menschenrecht für Menschen in Not<br /> * Gegen die Vertreibung der Roma! <br /><br /> Die Besetzung der Herrengasse am 12.2. war ein mächtiges Zeichen der Zivilgesellschaft in dieser Stadt. <br /><br /> Die Plattform wird getragen von (Stand 10.2.2011): <br /> Akademie Graz<br /> Dachverband der offenen Jugendarbeit<br /> DIDF - Föderation der Demokratischen Arbeitervereine<br /> dramagraz<br /> Elevate<br /> ETC Europäisches Trainings- und Forschungszentrum<br /> Forschungsteam „Shifting romipen” (Uni Graz)<br /> Forum Stadtpark<br /> Freigangproduktionen<br /> Die Grünen (Graz u. Steiermark)<br /> Grazer Initiative<br /> IG Kultur Steiermark<br /> Innovative Sozialprojekte – ISOP<br /> Jugendkulturzentrum Explosiv<br /> KPÖ Steiermark<br /> Lendwirbel<br /> Megaphon<br /> Grazer Menschenrechtsbeirat<br /> ÖH der Karl-Franzens Universität Graz<br /> Pfarre St. Andrä<br /> Radio Helsinki<br /> &lt; rotor &gt; Verein für zeitgenössische Kunst<br /> Spektral<br /> [spi:k] - Verein zur Dokumentation der Sprache und Kultur regionaler Minderheiten<br /> steirischer herbst<br /> the smallest gallery – collaboration space<br /> Theater am Ortweinplatz<br /> Theater im Bahnhof<br /> Vinzenzgemeinschaft Eggenberg<br /> Welthaus Diözese Graz-Seckau<br /> Xenos - Verein zur Förderung der Soziokulturellen Vielfalt<br /> … <br /><br /> Und DIR! <br /><br /> Plattform gegen ein Bettelverbot in der Steiermark<br /> Kontakt: gegenbettelverbot@gmail.com <br /> Facebook-Gruppe: <a href="http://www.facebook.com/group.php?gid=121805051185095">Gegen ein Bettelverbot in Graz</a></p>
-             """},
-             'childs': [
-                 {'type': 'Folder', 'title': u'Bildergalerie',
-                  'opts': {'setLayout': u'gallery.html'},
-                  'childs': [
-{'type': 'Image', 'title': u'bild1', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/168351_1697643132308_1574763386_1607057_8004618_n.jpg')}},
-{'type': 'Image',  'title': u'bild2', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/168387_1697641732273_1574763386_1607052_5112999_n.jpg')}},
-{'type': 'Image',  'title': u'bild3', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/168915_1697641852276_1574763386_1607053_121061_n.jpg')}},
-{'type': 'Image',  'title': u'bild4', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/168967_1697642892302_1574763386_1607056_521602_n.jpg')}},
-{'type': 'Image',  'title': u'bild5', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/179811_1697641572269_1574763386_1607051_3501510_n.jpg')}},
-{'type': 'Image',  'title': u'bild6', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/179827_1697637852176_1574763386_1607035_7117248_n.jpg')}},
-{'type': 'Image',  'title': u'bild7', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180023_1697640172234_1574763386_1607046_4574419_n.jpg')}},
-{'type': 'Image',  'title': u'bild8', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180043_1697642292287_1574763386_1607054_5640632_n.jpg')}},
-{'type': 'Image',  'title': u'bild9', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180067_191519290866152_100000242460345_616154_2974335_n.jpg')}},
-{'type': 'Image',  'title': u'bild10', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180115_1697635772124_1574763386_1607021_8195464_n.jpg')}},
-{'type': 'Image',  'title': u'bild11', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180347_1697639852226_1574763386_1607045_2264331_n.jpg')}},
-{'type': 'Image',  'title': u'bild12', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180351_1697640812250_1574763386_1607048_6149618_n.jpg')}},
-{'type': 'Image',  'title': u'bild13', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180375_1697641172259_1574763386_1607049_895722_n.jpg')}},
-{'type': 'Image',  'title': u'bild14', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180571_1697638292187_1574763386_1607039_1981472_n.jpg')}},
-{'type': 'Image',  'title': u'bild15', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180751_1697643492317_1574763386_1607059_553489_n.jpg')}},
-{'type': 'Image',  'title': u'bild16', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180811_1697639292212_1574763386_1607044_7345632_n.jpg')}},
-{'type': 'Image',  'title': u'bild17', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180839_194623570565826_100000545529524_640338_4974991_n.jpg')}},
-{'type': 'Image',  'title': u'bild18', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/180863_1697643332313_1574763386_1607058_1679619_n.jpg')}},
-{'type': 'Image',  'title': u'bild19', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/181571_1697638692197_1574763386_1607041_6303679_n.jpg')}},
-{'type': 'Image',  'title': u'bild20', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/182399_1697636332138_1574763386_1607025_2307995_n.jpg')}},
-{'type': 'Image',  'title': u'bild21', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/182431_1697638892202_1574763386_1607042_6760018_n.jpg')}},
-{'type': 'Image',  'title': u'bild22', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/182431_1697642692297_1574763386_1607055_1838171_n.jpg')}},
-{'type': 'Image',  'title': u'bild23', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/182466_1854570602312_1182212188_32287621_7037162_n.jpg')}},
-{'type': 'Image',  'title': u'bild24', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/182827_1697636772149_1574763386_1607029_7992200_n.jpg')}},
-{'type': 'Image',  'title': u'bild25', 'data':{'image':sht.load_file(globals(), 'data/bettelverbot/182875_1697637132158_1574763386_1607032_4319304_n.jpg')}},
-
-              ]}]},
+             """}},
 
               {'type': 'Folderish News Item', 'title': u'Sendungen on demand"',
                'data':{
