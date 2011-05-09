@@ -13,5 +13,6 @@
     <dependency>profile-plone.app.caching:default</dependency>
     <dependency>profile-sc.social.bookmarks:default</dependency>
     <dependency>profile-thet.helsinki.project:default</dependency>
+    <dependency>profile-zettwerk.fullcalendar:default</dependency>
   </dependencies>
 </metadata>
