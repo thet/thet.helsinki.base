@@ -57,6 +57,11 @@ def setup_content(context):
                 {'type': 'Folderish Document', 'title':u'Gremien'},
                 {'type': 'Folder', 'title':u'Bildergalerien'},
             ]},
+            {'type': 'Folder', 'title':u'Termine',
+             'opts': {'setLayout': 'fullcalendar_view',
+                      'setLocallyAllowedTypes': ['Folderish Event'],
+                      'setImmediatelyAddableTypes': ['Folderish Event'],
+                      'workflow': None,}}, # leave private
             {'type': 'Folderish Document', 'title':u'Mitmachen'},
             {'type': 'Folderish Document', 'title':u'Unterstützen'},
             {'type': 'Link', 'title':u'Wiki',
