@@ -2,6 +2,16 @@
 <object name="Folderish Document"
   meta_type="Factory-based Type Information with dynamic views">
  <property name="allow_discussion">True</property>
+ <property name="filter_content_types">True</property>
+ <property name="allowed_content_types">
+  <element value="Folderish Document" />
+  <element value="Folderish Event" />
+  <element value="File" />
+  <element value="Folder" />
+  <element value="Image" />
+  <element value="Link" />
+  <element value="Topic" />
+ </property>
  <property name="view_methods" purge="False">
   <element value="traverse_view"/>
  </property>
