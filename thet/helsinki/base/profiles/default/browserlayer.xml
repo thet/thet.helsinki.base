@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+  <layer name="helsinki_theme"
+    interface="thet.helsinki.base.interfaces.IHelsinkiTheme" />
+</layers>

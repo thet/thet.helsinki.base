@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
@@ -27,6 +28,11 @@
       for="collective.teaser.browser.common.ITeaserPortlet
            plone.app.portlets.interfaces.ILeftColumn
            plone.portlets.interfaces.ILocalPortletAssignable" />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+    directory="templates"
+    layer=".interfaces.IHelsinkiTheme" />
 
   <!-- include package="plone.app.discussion" /-->
   <!-- include package="plone.formwidget.recaptcha" /-->
