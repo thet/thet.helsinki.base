@@ -3,6 +3,6 @@
  <default_language value="de"/>
  <supported_langs>
      <element value="de"/>
-     <element value="en"/>
+     <!--element value="en"/-->
  </supported_langs>
 </object>
