@@ -196,6 +196,48 @@
     <property name="image_size">column_right</property>
   </assignment>
 
+  <assignment name="mach-mit" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/info/unterstutzen"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">mach mit!</property>
+    <property name="text"><![CDATA[
+<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+<p><a href="/info/mitmachen">Mach mit!</a></p>
+<p><a href="/info/mitmachen">Join in!</a></p>
+<p><a href="/info/mitmachen">Uključi se!</a></p>
+<p><a href="/info/mitmachen">Присоед-иняйтесь!</a></p>
+<p><a href="/info/mitmachen">¡Participa!</a></p>
+<p><a href="/info/mitmachen">Vegyünk részt!</a></p>
+<p><a href="/info/mitmachen">Tule mukaan!</a></p>
+<p><a href="/info/mitmachen">Включете се!</a></p>
+<p><a href="/info/mitmachen">Se implice!</a></p>
+      ]]></property>
+  </assignment>
+
+  <assignment name="mach-mit" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/info/mitmachen"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">mach mit!</property>
+    <property name="text"><![CDATA[
+<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+<p><a href="/info/mitmachen">Mach mit!</a></p>
+<p><a href="/info/mitmachen">Join in!</a></p>
+<p><a href="/info/mitmachen">Uključi se!</a></p>
+<p><a href="/info/mitmachen">Присоед-иняйтесь!</a></p>
+<p><a href="/info/mitmachen">¡Participa!</a></p>
+<p><a href="/info/mitmachen">Vegyünk részt!</a></p>
+<p><a href="/info/mitmachen">Tule mukaan!</a></p>
+<p><a href="/info/mitmachen">Включете се!</a></p>
+<p><a href="/info/mitmachen">Se implice!</a></p>
+      ]]></property>
+  </assignment>
+
   <!-- subsite programm -->
   <assignment name="teaser-portlet-programm"
       category="context"
