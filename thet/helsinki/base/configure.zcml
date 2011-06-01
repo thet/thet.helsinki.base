@@ -7,6 +7,7 @@
     xmlns:meta="http://namespaces.zope.org/meta"
     i18n_domain="thet.helsinki.base">
 
+  <include package="plone.app.caching" />
   <include package="alm.solrindex" />
   <include package="collective.disqus" />
   <include package="collective.flowplayer" />
