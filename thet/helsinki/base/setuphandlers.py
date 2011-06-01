@@ -93,6 +93,8 @@ def setup_content(context):
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
         type_crit.setValue(['News Item with Folder', 'News Item'])
+        sort_crit = topic.addCriterion('getObjPositionInParent','ATSortCriterion')
+        sort_crit.setReversed(True)
         topic.reindexObject()
         logger.info('configured topic %s' % topic.id)
     except:
