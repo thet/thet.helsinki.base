@@ -93,21 +93,4 @@
 
   </object>
 
-  <!-- *** OBJECT *** -->
-  <object name="object" meta_type="CMF Action Category">
-    <property name="title"></property>
-    <!-- MULTI UPLOAD -->
-    <object name="upload" meta_type="CMF Action" i18n:domain="wcms.skin.backend">
-      <property name="title" i18n:translate="">Multi Upload</property>
-      <property name="description" i18n:translate="">Mehrere Dateien gleichzeitig hochladen.</property>
-      <property name="url_expr">string:${folder_url}/@@upload</property>
-      <property name="icon_expr"></property>
-      <property name="available_expr"></property>
-      <property name="permissions">
-        <element value="Add portal content"/>
-      </property>
-      <property name="visible">True</property>
-    </object>
-  </object>
-
 </object>
