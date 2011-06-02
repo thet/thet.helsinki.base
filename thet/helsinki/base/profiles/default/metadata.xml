@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <version>1</version>
+  <version>2</version>
   <dependencies>
     <dependency>profile-plone.app.caching:default</dependency>
     <!--dependency>profile-Products.LinguaPlone:LinguaPlone</dependency-->
@@ -11,6 +11,7 @@
     <dependency>profile-collective.folderishtypes:default</dependency>
     <dependency>profile-collective.gallery:default</dependency>
     <dependency>profile-collective.teaser:default</dependency>
+    <dependency>profile-collective.uploadify:default</dependency>
     <dependency>profile-sc.social.bookmarks:default</dependency>
     <dependency>profile-thet.helsinki.project:default</dependency>
     <dependency>profile-zettwerk.fullcalendar:default</dependency>
