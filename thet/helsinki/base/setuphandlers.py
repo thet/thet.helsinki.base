@@ -164,25 +164,16 @@ def setup_testdata(context):
     # news
     ctx = site
     content_structure = [
-        {'type': 'Folderish News Item', 'title': u'Gegen ein Bettelverbot in der Steiermark',
+        {'type': 'Folderish News Item', 'title': u'Sendungen on demand"',
          'data':{
-             'description':u"""Die Plattform gegen ein Bettelverbot in der Steiermark hat zum PROTEST aufgerufen.""",
-             'image':sht.load_file(globals(), 'data/bettelverbot/181571_1697638692197_1574763386_1607041_6303679_n.jpg'),
-             'imageCaption':u'Wir setzen uns nieder!',
-             'text':u"""
-<p><b>"Wir setzen uns nieder!"</b> war das Motto, unter dem sich am  Samstag, 12. Februar 2011 ab 11 Uhr mehrere hundert Menschen in der  Grazer Herrengasse vor dem Landhaus zum Protest trafen. <br /><br /> Die Plattform ist ein überparteilicher Zusammenschluss von Initiativen  gegen die Verschärfung des Landessicherheitsgesetzes und die Einführung  eines Bettelverbotes in der Steiermark. Am Dienstag, den 15. Februar,  wurde ein generelles Bettelverbot im steirischen Landtag beschlossen.  <br /><br /> Das können wir nicht hinnehmen. Dagegen stehen wir auf. Dagegen setzen wir uns nieder!  <br /><br /> * Die Straße gehört uns allen!<br /> * Betteln ist ein Menschenrecht für Menschen in Not<br /> * Gegen die Vertreibung der Roma! <br /><br /> Die Besetzung der Herrengasse am 12.2. war ein mächtiges Zeichen der Zivilgesellschaft in dieser Stadt. <br /><br /> Die Plattform wird getragen von (Stand 10.2.2011): <br /> Akademie Graz<br /> Dachverband der offenen Jugendarbeit<br /> DIDF - Föderation der Demokratischen Arbeitervereine<br /> dramagraz<br /> Elevate<br /> ETC Europäisches Trainings- und Forschungszentrum<br /> Forschungsteam „Shifting romipen” (Uni Graz)<br /> Forum Stadtpark<br /> Freigangproduktionen<br /> Die Grünen (Graz u. Steiermark)<br /> Grazer Initiative<br /> IG Kultur Steiermark<br /> Innovative Sozialprojekte – ISOP<br /> Jugendkulturzentrum Explosiv<br /> KPÖ Steiermark<br /> Lendwirbel<br /> Megaphon<br /> Grazer Menschenrechtsbeirat<br /> ÖH der Karl-Franzens Universität Graz<br /> Pfarre St. Andrä<br /> Radio Helsinki<br /> &lt; rotor &gt; Verein für zeitgenössische Kunst<br /> Spektral<br /> [spi:k] - Verein zur Dokumentation der Sprache und Kultur regionaler Minderheiten<br /> steirischer herbst<br /> the smallest gallery – collaboration space<br /> Theater am Ortweinplatz<br /> Theater im Bahnhof<br /> Vinzenzgemeinschaft Eggenberg<br /> Welthaus Diözese Graz-Seckau<br /> Xenos - Verein zur Förderung der Soziokulturellen Vielfalt<br /> … <br /><br /> Und DIR! <br /><br /> Plattform gegen ein Bettelverbot in der Steiermark<br /> Kontakt: gegenbettelverbot@gmail.com <br /> Facebook-Gruppe: <a href="http://www.facebook.com/group.php?gid=121805051185095">Gegen ein Bettelverbot in Graz</a></p>
-             """}},
-
-              {'type': 'Folderish News Item', 'title': u'Sendungen on demand"',
-               'data':{
-               'description':u"""
+         'description':u"""
 Sendung verpasst? Lust auf nochmal Hören? Das geht (immer öfter). Viele
 Sendungen von Radio Helsinki sind online verfügbar. Eine Auswahl...
-               """,
-               'image':sht.load_file(globals(), 'data/EUVE_satellite.gif'),
-               'text':u"""
+         """,
+         'image':sht.load_file(globals(), 'data/EUVE_satellite.gif'),
+         'text':u"""
 <p>Abunda Lingva <a href="http://cba.fro.at/series/978" target="_blank">http://cba.fro.at/</a> <br /> A_partment politi_X <a href="http://www.freie-radios.net/portal/suche.php?such=true&amp;query=&amp;redaktion=0&amp;art=0&amp;serie=129&amp;sprache=0&amp;radio=0&amp;autor=&amp;beg_monat=01&amp;beg_jahr=1970&amp;end_monat=12&amp;end_jahr=2011&amp;Submit=Suche+starten" target="_blank">http://www.freie-radios.net/</a> <br /> bitte8bit <a href="http://cba.fro.at/series/607" target="_blank">http://cba.fro.at/</a> <br /> clash connect <a href="http://cba.fro.at/series/884" target="_blank">http://cba.fro.at/</a> <br /> COCOYOC  <a href="http://cba.fro.at/series/877" target="_blank">http://cba.fro.at/</a> <br /> CROPfm <a href="http://cropfm.at/past_shows.htm" target="_blank">http://cropfm.at/</a> <br /> gender frequenz <a href="http://cba.fro.at/series/966" target="_blank">http://cba.fro.at/</a> <br /> Hörbar Abstrakt <a href="http://www.kim-pop.org/index.cfm?contentURL=http%3A//www.kim-pop.org/index.cfm%3Ffuseaction%3Dintro" target="_blank">http://www.kim-pop.org/</a> <br /> Hör-Saal <a href="http://cba.fro.at/series/1045" target="_blank">http://cba.fro.at/</a> <br /> In Graz verstrickt <a href="http://cba.fro.at/series/948" target="_blank">http://cba.fro.at/</a> <br /> Klimanews <a href="http://cba.fro.at/series/685" target="_blank">http://cba.fro.at/</a> <br /> Put a bullet thru the jukebox <a href="http://cba.fro.at/series/571" target="_blank">http://cba.fro.at/</a> <br /> Radio Auslandsdienst <a href="http://radio.auslandsdienst.at/sendungen/" target="_blank">http://radio.auslandsdienst.at/</a> <br /> Stimmen aus dem Annenviertel <a href="http://cba.fro.at/series/774" target="_blank">http://cba.fro.at/</a> <br /> Tonspur <a href="http://sendungtonspur.wordpress.com/" target="_blank">http://tonspur.mur.at/</a> <br /> Wissen <a href="http://www-gewi.uni-graz.at/cocoon/pug/gsearch?query=Helsinki&amp;query_encoded=Helsinki&amp;hitPageStart=1&amp;hitPageSize=10" target="_blank">Podcast-Portal Uni Graz</a></p>
-               """}},
+         """}},
     ]
     sht.create_item_runner(ctx, content_structure, lang='de', logger=logger)
 
