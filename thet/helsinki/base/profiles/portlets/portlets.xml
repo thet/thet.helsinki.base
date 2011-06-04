@@ -32,7 +32,7 @@
       key="/"
       manager="plone.rightcolumn"
       visible="True">
-    <property name="name"/>
+    <property name="name">navigation-main</property>
     <property name="root"/>
     <property name="currentFolderOnly">False</property>
     <property name="includeTop">False</property>
@@ -264,10 +264,10 @@
       key="/projekte"
       manager="plone.leftcolumn"
       visible="True">
-    <property name="name"/>
+      <property name="name">navigation-projekte</property>
     <property name="root"/>
     <property name="currentFolderOnly">False</property>
-    <property name="includeTop">True</property>
+    <property name="includeTop">False</property>
     <property name="topLevel">1</property>
     <property name="bottomLevel">4</property>
   </assignment>

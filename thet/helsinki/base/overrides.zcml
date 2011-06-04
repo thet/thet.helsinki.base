@@ -3,6 +3,6 @@
     i18n_domain="thet.helsinki.base">
 
   <adapter
-      factory=".portlet_adapters.NavtreeQueryBuilder" />
+      factory=".portlet_adapters.CustomQueryBuilder" />
 
 </configure>
