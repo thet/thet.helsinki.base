@@ -10,7 +10,7 @@ def setup_content(context):
 
     site = context.getSite()
 
-    sht.delete_items(site, ('front-page', 'news', 'events'), logger)
+    #sht.delete_items(site, ('front-page', 'news', 'events'), logger)
     sht.hide_and_retract(site['Members'], hide=False, logger=logger)
 
     sht.add_group(site, 'vorstand', roles=['Member'], logger=logger)
@@ -83,6 +83,30 @@ def setup_content(context):
               'opts': {'setLayout': 'folder_summary_view',}},
              {'type': 'Topic', 'title':u'Vergangenes',
               'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2011',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2010',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2009',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2008',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2007',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2006',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2005',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2004',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2003',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2002',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2001',
+              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Topic', 'title':u'2000',
+              'opts': {'setLayout': 'folder_summary_view',}},
         ]},
     ]
     sht.create_item_runner(site, content_structure, lang='de', logger=logger)
@@ -142,7 +166,7 @@ def setup_content(context):
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
         type_crit.setValue(['Project'])
-        sort_crit = topic.addCriterion('start','ATSortCriterion')
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
         sort_crit.setReversed(True)
         date_crit = topic.addCriterion('end', 'ATFriendlyDateCriteria')
         date_crit.setValue(0)
@@ -153,6 +177,197 @@ def setup_content(context):
     except:
         pass
 
+    try:
+        topic = site['projekte']['2011']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2011-01-01')
+        date_crit.setEnd('2012-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2010']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2010-01-01')
+        date_crit.setEnd('2011-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2009']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2009-01-01')
+        date_crit.setEnd('2010-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2008']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2008-01-01')
+        date_crit.setEnd('2009-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2007']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2007-01-01')
+        date_crit.setEnd('2008-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2006']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2006-01-01')
+        date_crit.setEnd('2007-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2005']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2005-01-01')
+        date_crit.setEnd('2006-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2004']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2004-01-01')
+        date_crit.setEnd('2005-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2003']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2003-01-01')
+        date_crit.setEnd('2004-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2002']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2002-01-01')
+        date_crit.setEnd('2003-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2001']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2001-01-01')
+        date_crit.setEnd('2002-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
+
+    try:
+        topic = site['projekte']['2000']
+        topic.limitNumber = True
+        topic.itemCount = 10
+        type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
+        type_crit.setValue(['Project'])
+        sort_crit = topic.addCriterion('end','ATSortCriterion')
+        sort_crit.setReversed(True)
+        date_crit = topic.addCriterion('end', 'ATDateRangeCriterion')
+        date_crit.setStart('2000-01-01')
+        date_crit.setEnd('2001-01-01')
+        topic.reindexObject()
+        logger.info('configured topic %s' % topic.id)
+    except:
+        pass
 
 # setup testdata
 def setup_testdata(context):
