@@ -6,6 +6,7 @@ from zope.component import adapts
 from plone.app.portlets.portlets.navigation import QueryBuilder
 from plone.app.layout.navigation.interfaces import INavigationQueryBuilder
 from plone.app.portlets.portlets.navigation import INavigationPortlet
+from plone.app.layout.navigation.root import getNavigationRoot
 
 @implementer(IPortletAvailable)
 def main_teaser_available(portlet, manager, context):
@@ -38,3 +39,7 @@ class CustomQueryBuilder(QueryBuilder):
                 'Folderish Document', 'Folderish Event',
                 'Folderish News Item']
 
+        rootPath = getNavigationRoot(context, relativeRoot=portlet.root)
+        if portlet.name == 'navigation-main':
+            # navtree not 1 for sitemap like expanded trees
+            self.query['path'] = {'query': rootPath}
