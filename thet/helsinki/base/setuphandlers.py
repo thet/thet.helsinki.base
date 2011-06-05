@@ -10,7 +10,10 @@ def setup_content(context):
 
     site = context.getSite()
 
+    # does not work yet because of plone4.1/uuid bug
     #sht.delete_items(site, ('front-page', 'news', 'events'), logger)
+    #sht.delete_items(site['projekte'],
+    #        ('aktuelles', 'kommendes', 'vergangenes'), logger)
     sht.hide_and_retract(site['Members'], hide=False, logger=logger)
 
     sht.add_group(site, 'vorstand', roles=['Member'], logger=logger)
@@ -76,37 +79,42 @@ def setup_content(context):
          'opts': {'setLayout': 'traverse_view',
                   'setLocallyAllowedTypes': ['Project', 'Topic'],
                   'setImmediatelyAddableTypes': ['Project']},
-         'childs':[
+         'childs': [
              {'type': 'Topic', 'title':u'Aktuelles',
               'opts': {'setLayout': 'folder_summary_view',}},
              {'type': 'Topic', 'title':u'Kommendes',
               'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'Vergangenes',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2011',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2010',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2009',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2008',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2007',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2006',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2005',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2004',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2003',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2002',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2001',
-              'opts': {'setLayout': 'folder_summary_view',}},
-             {'type': 'Topic', 'title':u'2000',
-              'opts': {'setLayout': 'folder_summary_view',}},
+             {'type': 'Folder', 'title':u'Vergangenes',
+              'opts': {'setLayout': 'folder_summary_view',},
+              'childs': [
+                 {'type': 'Topic', 'title':u'Vergangenes',
+                  'opts': {'setLayout': 'folder_summary_view',
+                           'setDefault': True}},
+                 {'type': 'Topic', 'title':u'2011',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2010',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2009',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2008',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2007',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2006',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2005',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2004',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2003',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2002',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2001',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+                 {'type': 'Topic', 'title':u'2000',
+                  'opts': {'setLayout': 'folder_summary_view',}},
+             ]},
         ]},
     ]
     sht.create_item_runner(site, content_structure, lang='de', logger=logger)
@@ -161,7 +169,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['vergangenes']
+        topic = site['projekte']['vergangenes']['vergangenes']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -178,7 +186,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2011']
+        topic = site['projekte']['vergangenes']['2011']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -194,7 +202,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2010']
+        topic = site['projekte']['vergangenes']['2010']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -210,7 +218,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2009']
+        topic = site['projekte']['vergangenes']['2009']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -226,7 +234,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2008']
+        topic = site['projekte']['vergangenes']['2008']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -242,7 +250,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2007']
+        topic = site['projekte']['vergangenes']['2007']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -258,7 +266,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2006']
+        topic = site['projekte']['vergangenes']['2006']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -274,7 +282,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2005']
+        topic = site['projekte']['vergangenes']['2005']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -290,7 +298,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2004']
+        topic = site['projekte']['vergangenes']['2004']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -306,7 +314,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2003']
+        topic = site['projekte']['vergangenes']['2003']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -322,7 +330,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2002']
+        topic = site['projekte']['vergangenes']['2002']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -338,7 +346,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2001']
+        topic = site['projekte']['vergangenes']['2001']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
@@ -354,7 +362,7 @@ def setup_content(context):
         pass
 
     try:
-        topic = site['projekte']['2000']
+        topic = site['projekte']['vergangenes']['2000']
         topic.limitNumber = True
         topic.itemCount = 10
         type_crit = topic.addCriterion('Type','ATPortalTypeCriterion')
