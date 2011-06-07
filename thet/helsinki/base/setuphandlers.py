@@ -10,10 +10,9 @@ def setup_content(context):
 
     site = context.getSite()
 
-    # does not work yet because of plone4.1/uuid bug
-    #sht.delete_items(site, ('front-page', 'news', 'events'), logger)
-    #sht.delete_items(site['projekte'],
-    #        ('aktuelles', 'kommendes', 'vergangenes'), logger)
+    sht.delete_items(site, ('front-page', 'news', 'events'), logger)
+    sht.delete_items(site['projekte'],
+            ('aktuelles', 'kommendes', 'vergangenes'), logger)
     sht.hide_and_retract(site['Members'], hide=False, logger=logger)
 
     sht.add_group(site, 'vorstand', roles=['Member'], logger=logger)
@@ -77,7 +76,7 @@ def setup_content(context):
         ]},
         {'type': 'Folder', 'title': u'Projekte',
          'opts': {'setLayout': 'traverse_view',
-                  'setLocallyAllowedTypes': ['Project', 'Topic'],
+                  'setLocallyAllowedTypes': ['Project', 'Folder', 'Topic'],
                   'setImmediatelyAddableTypes': ['Project']},
          'childs': [
              {'type': 'Topic', 'title':u'Aktuelles',
@@ -85,7 +84,9 @@ def setup_content(context):
              {'type': 'Topic', 'title':u'Kommendes',
               'opts': {'setLayout': 'folder_summary_view',}},
              {'type': 'Folder', 'title':u'Vergangenes',
-              'opts': {'setLayout': 'folder_summary_view',},
+              'opts': {'setLayout': 'folder_summary_view',
+                       'setLocallyAllowedTypes': ['Topic'],
+                       'setImmediatelyAddableTypes': []},
               'childs': [
                  {'type': 'Topic', 'title':u'Vergangenes',
                   'opts': {'setLayout': 'folder_summary_view',
