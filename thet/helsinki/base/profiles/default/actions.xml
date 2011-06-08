@@ -93,4 +93,7 @@
 
   </object>
 
+  <object name="document_actions" meta_type="CMF Action Category" purge="True">
+  </object>
+
 </object>
