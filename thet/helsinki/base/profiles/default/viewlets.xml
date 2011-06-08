@@ -4,6 +4,10 @@
     <viewlet name="sc.social.bookmarks" />
   </hidden>
 
+  <hidden manager="plone.belowcontent" skinname="*">
+    <viewlet name="collective.folderishtypes.folderish_listing_viewlet" />
+  </hidden>
+  
   <order manager="plone.belowcontent" skinname="*">
     <viewlet name="plone.comments" insert-before="*" />
   </order>
