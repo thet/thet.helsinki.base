@@ -3,4 +3,9 @@
   <hidden manager="plone.belowcontentbody" skinname="*">
     <viewlet name="sc.social.bookmarks" />
   </hidden>
+
+  <order manager="plone.belowcontent" skinname="*">
+    <viewlet name="plone.comments" insert-before="*" />
+  </order>
+
 </object>
