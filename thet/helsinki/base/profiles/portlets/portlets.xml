@@ -69,18 +69,18 @@
     <property name="prefer_altimage">True</property>
     <property name="image_size">column_center</property>
   </assignment>
-  <assignment name="rss-cba.fro.at"
+  <assignment name="Sendungen zum Nachhören (cba.fro.at)"
       category="context"
       key="/news"
       manager="plone.leftcolumn"
       type="portlets.rss"
       visible="True">
-    <property name="count">3</property>
+    <property name="count">5</property>
     <property name="url">http://cba.fro.at/stationsrss/4</property>
     <property name="portlet_title">helsinki auf cba.fro.at</property>
     <property name="timeout">100</property>
   </assignment>
-  <assignment name="rss-freie-radios.net"
+  <assignment name="Sendungen zum Nachhören (freie-radios.net)"
       category="context"
       key="/news"
       manager="plone.leftcolumn"
