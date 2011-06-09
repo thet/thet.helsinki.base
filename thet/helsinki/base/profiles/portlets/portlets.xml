@@ -69,7 +69,7 @@
     <property name="prefer_altimage">True</property>
     <property name="image_size">column_center</property>
   </assignment>
-  <assignment name="Sendungen zum Nachhören (cba.fro.at)"
+  <assignment name="rss-cba.fro.at"
       category="context"
       key="/news"
       manager="plone.leftcolumn"
@@ -77,10 +77,10 @@
       visible="True">
     <property name="count">5</property>
     <property name="url">http://cba.fro.at/stationsrss/4</property>
-    <property name="portlet_title">helsinki auf cba.fro.at</property>
+    <property name="portlet_title">Sendungen zum Nachhören auf cba.fro.at</property>
     <property name="timeout">100</property>
   </assignment>
-  <assignment name="Sendungen zum Nachhören (freie-radios.net)"
+  <assignment name="rss-freie-radios.net"
       category="context"
       key="/news"
       manager="plone.leftcolumn"
@@ -88,8 +88,34 @@
       visible="True">
     <property name="count">3</property>
     <property name="url">http://www.freie-radios.net/portal/podcast.php?radio=43&amp;rss</property>
-    <property name="portlet_title">helsinki auf freie-radios.net</property>
+    <property name="portlet_title">Sendungen zum Nachhören auf freie-radios.net</property>
     <property name="timeout">100</property>
+  </assignment>
+
+<!-- community portlets -->
+  <assignment name="support-us" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/news"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">support us</property>
+    <property name="text"><![CDATA[
+<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+      ]]></property>
+  </assignment>
+  <assignment name="find-facebook" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/news"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">facebook</property>
+    <property name="text"><![CDATA[
+<p><a href="http://www.facebook.com/pages/Radio-Helsinki/222398828935">
+<span class="fbtext">Find us on</span>
+<span class="findfacebook"><span>Facebook</span></span></a></p>
+      ]]></property>
   </assignment>
   <assignment name="mach-mit" 
       type="plone.portlet.static.Static"
@@ -99,7 +125,6 @@
       visible="True">
     <property name="header">mach mit!</property>
     <property name="text"><![CDATA[
-<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
 <p><a href="/info/mitmachen">Mach mit!</a></p>
 <p><a href="/info/mitmachen">Join in!</a></p>
 <p><a href="/info/mitmachen">Uključi se!</a></p>
@@ -111,6 +136,7 @@
 <p><a href="/info/mitmachen">Se implice!</a></p>
       ]]></property>
   </assignment>
+<!-- end community portlets -->
 
 
   <!-- specific content types -->
@@ -196,6 +222,32 @@
     <property name="image_size">column_right</property>
   </assignment>
 
+
+<!-- community portlets -->
+  <assignment name="support-us" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/info/unterstutzen"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">support us</property>
+    <property name="text"><![CDATA[
+<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+      ]]></property>
+  </assignment>
+  <assignment name="find-facebook" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/info/unterstutzen"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">facebook</property>
+    <property name="text"><![CDATA[
+<p><a href="http://www.facebook.com/pages/Radio-Helsinki/222398828935">
+<span class="fbtext">Find us on</span>
+<span class="findfacebook"><span>Facebook</span></span></a></p>
+      ]]></property>
+  </assignment>
   <assignment name="mach-mit" 
       type="plone.portlet.static.Static"
       category="context"
@@ -204,7 +256,6 @@
       visible="True">
     <property name="header">mach mit!</property>
     <property name="text"><![CDATA[
-<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
 <p><a href="/info/mitmachen">Mach mit!</a></p>
 <p><a href="/info/mitmachen">Join in!</a></p>
 <p><a href="/info/mitmachen">Uključi se!</a></p>
@@ -216,7 +267,33 @@
 <p><a href="/info/mitmachen">Se implice!</a></p>
       ]]></property>
   </assignment>
+<!-- end community portlets -->
 
+<!-- community portlets -->
+  <assignment name="support-us" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/info/mitmachen"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">support us</property>
+    <property name="text"><![CDATA[
+<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+      ]]></property>
+  </assignment>
+  <assignment name="find-facebook" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/info/mitmachen"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">facebook</property>
+    <property name="text"><![CDATA[
+<p><a href="http://www.facebook.com/pages/Radio-Helsinki/222398828935">
+<span class="fbtext">Find us on</span>
+<span class="findfacebook"><span>Facebook</span></span></a></p>
+      ]]></property>
+  </assignment>
   <assignment name="mach-mit" 
       type="plone.portlet.static.Static"
       category="context"
@@ -225,7 +302,6 @@
       visible="True">
     <property name="header">mach mit!</property>
     <property name="text"><![CDATA[
-<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
 <p><a href="/info/mitmachen">Mach mit!</a></p>
 <p><a href="/info/mitmachen">Join in!</a></p>
 <p><a href="/info/mitmachen">Uključi se!</a></p>
@@ -237,6 +313,8 @@
 <p><a href="/info/mitmachen">Se implice!</a></p>
       ]]></property>
   </assignment>
+<!-- end community portlets -->
+
 
   <!-- subsite programm -->
   <assignment name="teaser-portlet-programm"
