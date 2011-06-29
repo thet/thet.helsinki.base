@@ -126,14 +126,12 @@
     <property name="header">mach mit!</property>
     <property name="text"><![CDATA[
 <p><a href="/info/mitmachen">Mach mit!</a></p>
-<p><a href="/info/mitmachen">Join in!</a></p>
-<p><a href="/info/mitmachen">Uključi se!</a></p>
-<p><a href="/info/mitmachen">Присоед-иняйтесь!</a></p>
-<p><a href="/info/mitmachen">¡Participa!</a></p>
-<p><a href="/info/mitmachen">Vegyünk részt!</a></p>
-<p><a href="/info/mitmachen">Tule mukaan!</a></p>
-<p><a href="/info/mitmachen">Включете се!</a></p>
-<p><a href="/info/mitmachen">Se implice!</a></p>
+<p><a href="/info/mitmachen/mitmachen-en">Join in!</a></p>
+<p><a href="/info/mitmachen/mitmachen-hr">Uključi se!</a></p>
+<p><a href="/info/mitmachen/mitmachen-ru">Присоединяйся!</a></p>
+<p><a href="/info/mitmachen/mitmachen-fr">REJOIGNEZ NOUS!</a></p>
+<p><a href="/info/mitmachen/mitmachen-hu">VEGYÉL RÉSZT!</a></p>
+<p><a href="/info/mitmachen/mitmachen-ro">FII ALĂTURI</a></p>
       ]]></property>
   </assignment>
 <!-- end community portlets -->
@@ -257,14 +255,12 @@
     <property name="header">mach mit!</property>
     <property name="text"><![CDATA[
 <p><a href="/info/mitmachen">Mach mit!</a></p>
-<p><a href="/info/mitmachen">Join in!</a></p>
-<p><a href="/info/mitmachen">Uključi se!</a></p>
-<p><a href="/info/mitmachen">Присоед-иняйтесь!</a></p>
-<p><a href="/info/mitmachen">¡Participa!</a></p>
-<p><a href="/info/mitmachen">Vegyünk részt!</a></p>
-<p><a href="/info/mitmachen">Tule mukaan!</a></p>
-<p><a href="/info/mitmachen">Включете се!</a></p>
-<p><a href="/info/mitmachen">Se implice!</a></p>
+<p><a href="/info/mitmachen/mitmachen-en">Join in!</a></p>
+<p><a href="/info/mitmachen/mitmachen-hr">Uključi se!</a></p>
+<p><a href="/info/mitmachen/mitmachen-ru">Присоединяйся!</a></p>
+<p><a href="/info/mitmachen/mitmachen-fr">REJOIGNEZ NOUS!</a></p>
+<p><a href="/info/mitmachen/mitmachen-hu">VEGYÉL RÉSZT!</a></p>
+<p><a href="/info/mitmachen/mitmachen-ro">FII ALĂTURI</a></p>
       ]]></property>
   </assignment>
 <!-- end community portlets -->
@@ -303,14 +299,12 @@
     <property name="header">mach mit!</property>
     <property name="text"><![CDATA[
 <p><a href="/info/mitmachen">Mach mit!</a></p>
-<p><a href="/info/mitmachen">Join in!</a></p>
-<p><a href="/info/mitmachen">Uključi se!</a></p>
-<p><a href="/info/mitmachen">Присоед-иняйтесь!</a></p>
-<p><a href="/info/mitmachen">¡Participa!</a></p>
-<p><a href="/info/mitmachen">Vegyünk részt!</a></p>
-<p><a href="/info/mitmachen">Tule mukaan!</a></p>
-<p><a href="/info/mitmachen">Включете се!</a></p>
-<p><a href="/info/mitmachen">Se implice!</a></p>
+<p><a href="/info/mitmachen/mitmachen-en">Join in!</a></p>
+<p><a href="/info/mitmachen/mitmachen-hr">Uključi se!</a></p>
+<p><a href="/info/mitmachen/mitmachen-ru">Присоединяйся!</a></p>
+<p><a href="/info/mitmachen/mitmachen-fr">REJOIGNEZ NOUS!</a></p>
+<p><a href="/info/mitmachen/mitmachen-hu">VEGYÉL RÉSZT!</a></p>
+<p><a href="/info/mitmachen/mitmachen-ro">FII ALĂTURI</a></p>
       ]]></property>
   </assignment>
 <!-- end community portlets -->
