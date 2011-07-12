@@ -20,6 +20,7 @@
   <include package="sc.social.bookmarks" />
   <include package="collective.teaser" />
   <include package="thet.helsinki.project" />
+  <include package="collective.gcs" />
 
   <includeOverrides file="overrides.zcml" />
 

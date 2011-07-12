@@ -45,5 +45,6 @@ setup(name='thet.helsinki.base',
           'sc.social.bookmarks',
           'collective.teaser',
           'thet.helsinki.project',
+          'collective.gcs',
       ],
 )

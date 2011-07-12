@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="collective.gcs.interfaces.IGcsSettings" prefix="collective.gcs">
+    <value key="gcs_id">002421524417321027464:00oaqalti88</value>
+  </records>
+</registry>
