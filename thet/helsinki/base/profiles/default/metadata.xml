@@ -4,7 +4,6 @@
   <dependencies>
     <dependency>profile-plone.app.caching:default</dependency>
     <!--dependency>profile-Products.LinguaPlone:LinguaPlone</dependency-->
-    <dependency>profile-alm.solrindex:default</dependency>
     <dependency>profile-collective.disqus:default</dependency>
     <dependency>profile-collective.flowplayer:default</dependency>
     <dependency>profile-collective.folderishtraverse:default</dependency>
