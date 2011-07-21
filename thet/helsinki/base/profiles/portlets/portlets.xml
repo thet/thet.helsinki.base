@@ -139,25 +139,6 @@
 
 
   <!-- specific content types -->
-  <assignment name="social-bookmarks-portlet"
-      key="File" category="content_type" visible="True"
-      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
-  <assignment name="social-bookmarks-portlet"
-      key="Image" category="content_type" visible="True"
-      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
-  <assignment name="social-bookmarks-portlet"
-      key="Folderish Document" category="content_type" visible="True"
-      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
-  <assignment name="social-bookmarks-portlet"
-      key="Folderish News Item" category="content_type" visible="True"
-      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
-  <assignment name="social-bookmarks-portlet"
-      key="Folderish Event" category="content_type" visible="True"
-      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
-  <assignment name="social-bookmarks-portlet"
-      key="Project" category="content_type" visible="True"
-      manager="plone.rightcolumn" type="sc.social.bookmarks.sb_portlet"/>
-
   <assignment name="gallery-portlet-context"
       key="Project" category="content_type" visible="True"
       manager="plone.rightcolumn" type="collective.gallery.show_galleries">
