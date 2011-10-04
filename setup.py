@@ -27,7 +27,7 @@ setup(name='thet.helsinki.base',
           'setuptools',
           # -*- Extra requirements: -*-
           'Plone',
-          'PILwoTk',
+          'Pillow',
           'z3c.jbot',
           'collective.setuphandlertools',
           'plone.app.caching',
