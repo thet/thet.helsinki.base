@@ -21,12 +21,6 @@
 
   <includeOverrides file="overrides.zcml" />
 
-  <adapter
-      factory=".portlet_adapters.main_teaser_available"
-      for="collective.teaser.browser.common.ITeaserPortlet
-           plone.app.portlets.interfaces.ILeftColumn
-           plone.portlets.interfaces.ILocalPortletAssignable" />
-
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
     directory="templates"
