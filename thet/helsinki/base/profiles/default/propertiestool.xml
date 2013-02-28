@@ -58,9 +58,10 @@
  <object name="imaging_properties" meta_type="Plone Property Sheet">
   <property name="title">Image handling properties</property>
   <property name="allowed_sizes" type="lines">
-   <element value="column_center 551:551"/>
-   <element value="column_left 181:600"/>
-   <element value="column_right 176:600"/>
+   <element value="column_center_startsite 494:2000"/>
+   <element value="column_center 551:2000"/>
+   <element value="column_left 181:1000"/>
+   <element value="column_right 176:1000"/>
    <element value="huge 960:960"/>
    <element value="large 774:774"/>
    <element value="preview 551:551"/>
