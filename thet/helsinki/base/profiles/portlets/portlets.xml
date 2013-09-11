@@ -23,10 +23,11 @@
       key="/"
       type="portlets.Navigation" />
 
+
   <!-- ADD -->
 
   <!-- all -->
-  <assignment name="navigation-main" 
+  <assignment name="navigation-main"
       type="portlets.Navigation"
       category="context"
       key="/"
@@ -39,6 +40,7 @@
     <property name="topLevel">0</property>
     <property name="bottomLevel">4</property>
   </assignment>
+
   <assignment name="review"
       manager="plone.leftcolumn"
       category="context"
@@ -54,21 +56,6 @@
   </assignment>
 
   <!-- startsite -->
-  <assignment name="teaser-portlet-startsite"
-      category="context"
-      key="/news"
-      manager="plone.leftcolumn"
-      type="collective.teaser.teaser_portlet"
-      visible="True">
-    <property name="importance_levels">
-      <element>3</element>
-      <element>4</element>
-    </property>
-    <property name="num_teasers">1</property>
-    <property name="show_title">False</property>
-    <property name="prefer_altimage">True</property>
-    <property name="image_size">column_center</property>
-  </assignment>
   <assignment name="rss-cba.fro.at"
       category="context"
       key="/news"
@@ -92,8 +79,81 @@
     <property name="timeout">100</property>
   </assignment>
 
+
+
+  <!-- TEASER -->
+  <assignment name="teaser-portlet-startsite"
+      category="context"
+      key="/news"
+      manager="plone.leftcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">True</property>
+    <property name="image_size">column_center</property>
+  </assignment>
+  <assignment name="teaser-portlet-info"
+      category="context"
+      key="/info"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">False</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  <assignment name="teaser-portlet-programm"
+      category="context"
+      key="/programm"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">False</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+  <assignment name="teaser-portlet-projekte"
+      category="context"
+      key="/projekte"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">False</property>
+    <property name="image_size">column_right</property>
+  </assignment>
+
+
+
+
 <!-- community portlets -->
-  <assignment name="support-us" 
+  <assignment name="support-us"
       type="plone.portlet.static.Static"
       category="context"
       key="/news"
@@ -104,7 +164,7 @@
 <p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
       ]]></property>
   </assignment>
-  <assignment name="find-facebook" 
+  <assignment name="find-facebook"
       type="plone.portlet.static.Static"
       category="context"
       key="/news"
@@ -117,7 +177,7 @@
 <span class="findfacebook"><span>Facebook</span></span></a></p>
       ]]></property>
   </assignment>
-  <assignment name="mach-mit" 
+  <assignment name="mach-mit"
       type="plone.portlet.static.Static"
       category="context"
       key="/news"
@@ -185,28 +245,9 @@
   </assignment>
 
 
-  <!-- subsite info -->
-  <assignment name="teaser-portlet-info"
-      category="context"
-      key="/info"
-      manager="plone.rightcolumn"
-      type="collective.teaser.teaser_portlet"
-      visible="True">
-    <property name="importance_levels">
-      <element>1</element>
-      <element>2</element>
-      <element>3</element>
-      <element>4</element>
-    </property>
-    <property name="num_teasers">1</property>
-    <property name="show_title">False</property>
-    <property name="prefer_altimage">False</property>
-    <property name="image_size">column_right</property>
-  </assignment>
-
 
 <!-- community portlets -->
-  <assignment name="support-us" 
+  <assignment name="support-us"
       type="plone.portlet.static.Static"
       category="context"
       key="/info/unterstutzen"
@@ -217,7 +258,7 @@
 <p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
       ]]></property>
   </assignment>
-  <assignment name="find-facebook" 
+  <assignment name="find-facebook"
       type="plone.portlet.static.Static"
       category="context"
       key="/info/unterstutzen"
@@ -230,7 +271,7 @@
 <span class="findfacebook"><span>Facebook</span></span></a></p>
       ]]></property>
   </assignment>
-  <assignment name="mach-mit" 
+  <assignment name="mach-mit"
       type="plone.portlet.static.Static"
       category="context"
       key="/info/unterstutzen"
@@ -253,7 +294,7 @@
 <!-- end community portlets -->
 
 <!-- community portlets -->
-  <assignment name="support-us" 
+  <assignment name="support-us"
       type="plone.portlet.static.Static"
       category="context"
       key="/info/mitmachen"
@@ -264,7 +305,7 @@
 <p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
       ]]></property>
   </assignment>
-  <assignment name="find-facebook" 
+  <assignment name="find-facebook"
       type="plone.portlet.static.Static"
       category="context"
       key="/info/mitmachen"
@@ -277,7 +318,7 @@
 <span class="findfacebook"><span>Facebook</span></span></a></p>
       ]]></property>
   </assignment>
-  <assignment name="mach-mit" 
+  <assignment name="mach-mit"
       type="plone.portlet.static.Static"
       category="context"
       key="/info/mitmachen"
@@ -300,27 +341,9 @@
 <!-- end community portlets -->
 
 
-  <!-- subsite programm -->
-  <assignment name="teaser-portlet-programm"
-      category="context"
-      key="/programm"
-      manager="plone.rightcolumn"
-      type="collective.teaser.teaser_portlet"
-      visible="True">
-    <property name="importance_levels">
-      <element>1</element>
-      <element>2</element>
-      <element>3</element>
-      <element>4</element>
-    </property>
-    <property name="num_teasers">1</property>
-    <property name="show_title">False</property>
-    <property name="prefer_altimage">False</property>
-    <property name="image_size">column_right</property>
-  </assignment>
-  
+
   <!-- subsite projekte -->
-  <assignment name="navigation-projekte" 
+  <assignment name="navigation-projekte"
       type="portlets.Navigation"
       category="context"
       key="/projekte"
@@ -333,22 +356,6 @@
     <property name="topLevel">1</property>
     <property name="bottomLevel">4</property>
   </assignment>
-  <assignment name="teaser-portlet-projekte"
-      category="context"
-      key="/projekte"
-      manager="plone.rightcolumn"
-      type="collective.teaser.teaser_portlet"
-      visible="True">
-    <property name="importance_levels">
-      <element>1</element>
-      <element>2</element>
-      <element>3</element>
-      <element>4</element>
-    </property>
-    <property name="num_teasers">1</property>
-    <property name="show_title">False</property>
-    <property name="prefer_altimage">False</property>
-    <property name="image_size">column_right</property>
-  </assignment>
+
 
 </portlets>

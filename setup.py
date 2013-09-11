@@ -44,5 +44,7 @@ setup(name='thet.helsinki.base',
           'collective.teaser',
           'thet.helsinki.project',
           'collective.gcs',
+          #'webcouturier.dropdownmenu',
+          #'collective.carousel',
       ],
 )
