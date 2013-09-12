@@ -4,7 +4,7 @@
 
   <object name="site_actions" meta_type="CMF Action Category" purge="True">
 
-    <object name="teasers" meta_type="CMF Action" i18n:domain="plone">
+    <!--object name="teasers" meta_type="CMF Action" i18n:domain="plone">
       <property name="title" i18n:translate="">Teasers</property>
       <property name="description" i18n:translate=""></property>
       <property name="url_expr">string:${globals_view/navigationRootUrl}/teasers</property>
@@ -14,7 +14,7 @@
         <element value="AddPortalContent"/>
       </property>
       <property name="visible">True</property>
-    </object>
+    </object-->
 
     <object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
       <property name="title" i18n:translate="">Site Map</property>
