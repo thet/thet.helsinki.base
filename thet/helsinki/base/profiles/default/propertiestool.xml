@@ -53,6 +53,9 @@
   <property name="localTimeOnlyFormat" type="string">%H:%M</property>
   <property name="default_language" type="string">de</property>
   <property name="default_charset" type="string">utf-8</property>
+  <property name="default_page_types" type="lines" purge="False">
+   <element value="Folder"/>
+  </property>
   <property name="icon_visibility" type="string">authenticated</property>
  </object>
  <object name="imaging_properties" meta_type="Plone Property Sheet">
