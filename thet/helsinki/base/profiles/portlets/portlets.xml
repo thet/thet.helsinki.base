@@ -23,6 +23,34 @@
       key="/"
       type="portlets.Navigation" />
 
+  <assignment name="teaser-portlet-startsite"
+      remove="True"
+      category="context"
+      key="/news"
+      manager="plone.leftcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True"/>
+  <assignment name="teaser-portlet-info"
+      remove="True"
+      category="context"
+      key="/info"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True"/>
+  <assignment name="teaser-portlet-programm"
+      remove="True"
+      category="context"
+      key="/programm"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True"/>
+  <assignment name="teaser-portlet-projekte"
+      remove="True"
+      category="context"
+      key="/projekte"
+      manager="plone.rightcolumn"
+      type="collective.teaser.teaser_portlet"
+      visible="True"/>
 
   <!-- ADD -->
 
@@ -82,7 +110,7 @@
 
 
   <!-- TEASER -->
-  <assignment name="teaser-portlet-startsite"
+  <!--assignment name="teaser-portlet-startsite"
       category="context"
       key="/news"
       manager="plone.leftcolumn"
@@ -147,7 +175,7 @@
     <property name="show_title">False</property>
     <property name="prefer_altimage">False</property>
     <property name="image_size">column_right</property>
-  </assignment>
+  </assignment-->
 
 
 
