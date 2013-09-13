@@ -189,7 +189,7 @@
       visible="True">
     <property name="header">support us</property>
     <property name="text"><![CDATA[
-<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+<p><a href="/info/mitmachen/unterstutzen">Unterstütze uns!</a></p>
       ]]></property>
   </assignment>
   <assignment name="find-facebook"
@@ -278,18 +278,18 @@
   <assignment name="support-us"
       type="plone.portlet.static.Static"
       category="context"
-      key="/info/unterstutzen"
+      key="/info/mitmachen/unterstutzen"
       manager="plone.rightcolumn"
       visible="True">
     <property name="header">support us</property>
     <property name="text"><![CDATA[
-<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+<p><a href="/info/mitmachen/unterstutzen">Unterstütze uns!</a></p>
       ]]></property>
   </assignment>
   <assignment name="find-facebook"
       type="plone.portlet.static.Static"
       category="context"
-      key="/info/unterstutzen"
+      key="/info/mitmachen/unterstutzen"
       manager="plone.rightcolumn"
       visible="True">
     <property name="header">facebook</property>
@@ -302,7 +302,7 @@
   <assignment name="mach-mit"
       type="plone.portlet.static.Static"
       category="context"
-      key="/info/unterstutzen"
+      key="/info/mitmachen/unterstutzen"
       manager="plone.rightcolumn"
       visible="True">
     <property name="header">mach mit!</property>
@@ -330,7 +330,7 @@
       visible="True">
     <property name="header">support us</property>
     <property name="text"><![CDATA[
-<p><a href="/info/unterstutzen">Unterstütze uns!</a></p>
+<p><a href="/info/mitmachen/unterstutzen">Unterstütze uns!</a></p>
       ]]></property>
   </assignment>
   <assignment name="find-facebook"
