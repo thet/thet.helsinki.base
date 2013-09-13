@@ -56,7 +56,7 @@
   <property name="default_page_types" type="lines" purge="False">
    <element value="Folder"/>
   </property>
-  <property name="icon_visibility" type="string">authenticated</property>
+  <property name="icon_visibility" type="string">disabled</property>
  </object>
  <object name="imaging_properties" meta_type="Plone Property Sheet">
   <property name="title">Image handling properties</property>

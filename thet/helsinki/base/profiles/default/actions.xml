@@ -16,6 +16,31 @@
       <property name="visible">True</property>
     </object-->
 
+    <object name="programmverwaltung" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Programmverwaltung</property>
+      <property name="description" i18n:translate=""></property>
+      <property
+          name="url_expr">string:https://pv.helsinki.at/admin/</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr">python:member is not None</property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+
+    <object name="impressum" meta_type="CMF Action" i18n:domain="plone">
+      <property name="title" i18n:translate="">Impressum</property>
+      <property name="description" i18n:translate=""></property>
+      <property name="url_expr">string:${globals_view/navigationRootUrl}/impressum</property>
+      <property name="icon_expr"></property>
+      <property name="available_expr"></property>
+      <property name="permissions">
+        <element value="View"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+
     <object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
       <property name="title" i18n:translate="">Site Map</property>
       <property name="description" i18n:translate=""></property>
