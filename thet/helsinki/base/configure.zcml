@@ -8,7 +8,6 @@
     i18n_domain="thet.helsinki.base">
 
   <include package="plone.app.caching" />
-  <include package="collective.flowplayer" />
   <include package="collective.gallery" />
   <include package="zettwerk.fullcalendar" />
   <include package="Products.LinguaPlone" />
