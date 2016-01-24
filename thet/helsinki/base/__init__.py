@@ -1,1 +1,0 @@
-from setuphandlers import setup_content
