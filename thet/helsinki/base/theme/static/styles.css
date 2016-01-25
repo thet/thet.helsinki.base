@@ -6,17 +6,6 @@
     left: 160px;
 }
 
-/*
- * don't like hiding titles anymore. nav doesnt show them anymore.
- */
-/* .portaltype-folder #column-main .parent-fieldname-title { display:none; }
-.portaltype-folder #column-main .documentFirstHeading { display:none; }
-.portaltype-topic #column-main .parent-fieldname-title { display:none; }
-.portaltype-topic #column-main .documentFirstHeading { display:none; }
-.portaltype-folderish-document #column-main .parent-fieldname-title { display:none; }
-.portaltype-folderish-document #column-main .documentFirstHeading { display:none; }
-*/
-
 body { font-size:75%; }
 html>body { font-size:12px; }
 body.largeText #the_metamenu,
@@ -190,16 +179,6 @@ h2 a { color: black; }
 .formTabs {
     margin-bottom: 1em;
 }
-
-/*
-a[href^="http://"]:not([href*="helsinki.at"]):not([href*="localhost"]):before,
-a[href^="https://"]:not([href*="helsinki.at"]):not([href*="localhost"]):before {
-    content:"⇱";
-}
-*/
-
-/*.state-published {
-    color:#777 !important; }*/
 
 
 input[type="text"],
@@ -637,12 +616,6 @@ span.findfacebook span { display:none; }
 
 
 /* text shadows */
-
-/*
-#the_metamenu .currentLanguage a,
-ul#the_navigation ul li a.navTreeCurrentItem,
-ul#the_navigation ul li a.navTreeItemInPath,
-#column-1 .navTreeCurrentItem, */
 .text_shadow_1 {
     text-shadow:
         -1px 0px 0px #FBD62A,
@@ -801,16 +774,6 @@ ul#the_navigation > li > a,
 
 /* program */
 
-/*
-.bf-experimentell { background-color:#A9C03E; }
-.bf-feature-magazin { background-color:#E54748; }
-.bf-horspiel-literatur { background-color:#C97485; }
-.bf-musiksendung { background-color:#F9A937; }
-.bf-talk { background-color:#FAE24F; }
-.bf-unmoderiertes-musikprogramm { background-color:#ECD4AD; }
-.bf-vortrag-diskussion { background-color:#A57397; }
-*/
-
 dl.filterbox li { line-height:1em; }
 
 .filterbox .abbrev { padding-left:20px; }
@@ -825,85 +788,6 @@ a.abbrev,
     background-position:left center; }
 .abbrev span { display:none; }
 
-/*
-.mf-E { background-image:url(img/topics-11/b-e.png); }
-.filterbox .mf-E:hover { background-image:url(img/topics-11/b-e-over.png); }
-.mf-Ex { background-image:url(img/topics-11/b-ex.png); }
-.filterbox .mf-Ex:hover { background-image:url(img/topics-11/b-ex-over.png); }
-.mf-H { background-image:url(img/topics-11/b-h.png); }
-.filterbox .mf-H:hover { background-image:url(img/topics-11/b-h-over.png); }
-.mf-J { background-image:url(img/topics-11/b-j.png); }
-.filterbox .mf-J:hover { background-image:url(img/topics-11/b-j-over.png); }
-.mf-K { background-image:url(img/topics-11/b-k.png); }
-.filterbox .mf-K:hover { background-image:url(img/topics-11/b-k-over.png); }
-.mf-M { background-image:url(img/topics-11/b-m.png); }
-.filterbox .mf-M:hover { background-image:url(img/topics-11/b-m-over.png); }
-.mf-O { background-image:url(img/topics-11/b-o.png); }
-.filterbox .mf-O:hover { background-image:url(img/topics-11/b-o-over.png); }
-.mf-R { background-image:url(img/topics-11/b-r.png); }
-.filterbox .mf-R:hover { background-image:url(img/topics-11/b-r-over.png); }
-.mf-Re { background-image:url(img/topics-11/b-re.png); }
-.filterbox .mf-Re:hover { background-image:url(img/topics-11/b-re-over.png); }
-.mf-V { background-image:url(img/topics-11/b-v.png); }
-.filterbox .mf-V:hover { background-image:url(img/topics-11/b-v-over.png); }
-
-.si-F { background-image:url(img/topics-11/s-f.png); }
-.filterbox .si-F:hover { background-image:url(img/topics-11/s-f-over.png); }
-.si-I { background-image:url(img/topics-11/s-i.png); }
-.filterbox .si-I:hover { background-image:url(img/topics-11/s-i-over.png); }
-.si-L { background-image:url(img/topics-11/s-l.png); }
-.filterbox .si-L:hover { background-image:url(img/topics-11/s-l-over.png); }
-.si-M { background-image:url(img/topics-11/s-m.png); }
-.filterbox .si-M:hover { background-image:url(img/topics-11/s-m-over.png); }
-.si-Mi { background-image:url(img/topics-11/s-mi.png); }
-.filterbox .si-Mi:hover { background-image:url(img/topics-11/s-mi-over.png); }
-.si-Ö { background-image:url(img/topics-11/s-oe.png); }
-.filterbox .si-Ö:hover { background-image:url(img/topics-11/s-oe-over.png); }
-.si-U { background-image:url(img/topics-11/s-ue.png); }
-.filterbox .si-U:hover { background-image:url(img/topics-11/s-ue-over.png); }
-.si-W { background-image:url(img/topics-11/s-w.png); }
-.filterbox .si-W:hover { background-image:url(img/topics-11/s-w-over.png); }
-
-.st-K { background-image:url(img/topics-11/r-k.png); }
-.filterbox .st-K:hover { background-image:url(img/topics-11/r-k-over.png); }
-.st-N { background-image:url(img/topics-11/r-n.png); }
-.filterbox .st-N:hover { background-image:url(img/topics-11/r-n-over.png); }
-.st-P { background-image:url(img/topics-11/r-p.png); }
-.filterbox .st-P:hover { background-image:url(img/topics-11/r-p-over.png); }
-.st-S { background-image:url(img/topics-11/r-s.png); }
-.filterbox .st-S:hover { background-image:url(img/topics-11/r-s-over.png); }
-.st-W { background-image:url(img/topics-11/r-w.png); }
-.filterbox .st-W:hover { background-image:url(img/topics-11/r-w-over.png); }
-*/
-
-/*
-.show-detail-header .mf-E { background-image:url(img/topics-17/b-e.png); }
-.show-detail-header .mf-Ex { background-image:url(img/topics-17/b-ex.png); }
-.show-detail-header .mf-H { background-image:url(img/topics-17/b-h.png); }
-.show-detail-header .mf-J { background-image:url(img/topics-17/b-j.png); }
-.show-detail-header .mf-K { background-image:url(img/topics-17/b-k.png); }
-.show-detail-header .mf-M { background-image:url(img/topics-17/b-m.png); }
-.show-detail-header .mf-O { background-image:url(img/topics-17/b-o.png); }
-.show-detail-header .mf-R { background-image:url(img/topics-17/b-r.png); }
-.show-detail-header .mf-Re { background-image:url(img/topics-17/b-re.png); }
-.show-detail-header .mf-V { background-image:url(img/topics-17/b-v.png); }
-
-.show-detail-header .si-F { background-image:url(img/topics-17/s-f.png); }
-.show-detail-header .si-I { background-image:url(img/topics-17/s-i.png); }
-.show-detail-header .si-L { background-image:url(img/topics-17/s-l.png); }
-.show-detail-header .si-M { background-image:url(img/topics-17/s-m.png); }
-.show-detail-header .si-Mi { background-image:url(img/topics-17/s-mi.png); }
-.show-detail-header .si-Ö { background-image:url(img/topics-17/s-oe.png); }
-.show-detail-header .si-U { background-image:url(img/topics-17/s-ue.png); }
-.show-detail-header .si-W { background-image:url(img/topics-17/s-w.png); }
-
-.show-detail-header .st-K { background-image:url(img/topics-17/r-k.png); }
-.show-detail-header .st-N { background-image:url(img/topics-17/r-n.png); }
-.show-detail-header .st-P { background-image:url(img/topics-17/r-p.png); }
-.show-detail-header .st-S { background-image:url(img/topics-17/r-s.png); }
-.show-detail-header .st-W { background-image:url(img/topics-17/r-w.png); }
-*/
-
 .show-detail-header .abbrev {
     display: inline-block;
     float: left;
@@ -911,8 +795,6 @@ a.abbrev,
     height: 17px;
     margin-bottom: 2px;
     margin-right: 2px; }
-
-
 
 /* broadcastformats box */
 .portletItem.bcformat {
