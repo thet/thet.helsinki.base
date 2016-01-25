@@ -1,17 +1,24 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:five="http://namespaces.zope.org/five"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:meta="http://namespaces.zope.org/meta"
+    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="thet.helsinki.base">
 
+  <!-- BASE -->
   <include package="plone.app.caching" />
+  <include package="plone.app.theming"/>
+  <include package="plone.resource"/>
+
+  <!-- PROJECT -->
+  <include package="thet.helsinki.project" />
+
+  <!-- EXTRA -->
   <include package="collective.folderishtypes" />
   <include package="collective.folderishtraverse" />
   <include package="collective.folderorder" />
-  <include package="thet.helsinki.project" />
   <include package="collective.gcs" />
 
   <includeOverrides file="overrides.zcml" />
@@ -20,6 +27,12 @@
   <browser:jbot
     directory="templates"
     layer=".interfaces.IHelsinkiTheme" />
+
+  <plone:static
+      directory="theme"
+      type="theme"
+      name="helsinki"
+      />
 
   <!-- include package="plone.formwidget.recaptcha" /-->
   <!-- include package="collective.autoresizetextarea" /-->
@@ -37,26 +50,10 @@
       />
 
   <genericsetup:registerProfile
-      name="setup_content"
-      title="thet.helsinki.base setup base content"
-      directory="profiles/setup_content"
-      description="Installs the thet.helsinki.base content"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
-  <genericsetup:registerProfile
       name="portlets"
       title="thet.helsinki.base portlets configuration"
       directory="profiles/portlets"
       description="Configures portlets of thet.helsinki.base package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
-  <genericsetup:registerProfile
-      name="setup_testdata"
-      title="thet.helsinki.base setup test data"
-      directory="profiles/setup_testdata"
-      description="Installs the thet.helsinki.base testdata"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

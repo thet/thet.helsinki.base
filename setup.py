@@ -22,20 +22,27 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
-        # -*- Extra requirements: -*-
+        # BASE
         'Plone',
         'Pillow',
-        'z3c.jbot',
-        'plone.app.caching',
-        #'plone.formwidget.recaptcha',
-        #'collective.autoresizetextarea',
-        'collective.folderishtypes',
-        'collective.folderishtraverse',
-        'collective.folderorder',
+        'plone.app.theming',
+        'plone.resource',
+
+        # PROJECT
         'thet.helsinki.project',
+
+        # EXTRA
+        # 'collective.autoresizetextarea',
+        # 'plone.formwidget.recaptcha',
+        'collective.folderishtraverse',
+        'collective.folderishtypes',
+        'collective.folderorder',
         'collective.gcs',
-        'plone.app.contenttypes < 1.2',
+        'plone.app.caching',
+        'z3c.jbot',
+        # NEW
         'collective.plonetruegallery',
-        'collective.quickupload'
+        'collective.quickupload',
+        'plone.app.contenttypes < 1.2'
     ],
 )

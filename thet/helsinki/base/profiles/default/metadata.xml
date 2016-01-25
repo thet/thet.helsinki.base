@@ -2,12 +2,18 @@
 <metadata>
   <version>2</version>
   <dependencies>
-    <dependency>profile-plone.app.collection:default</dependency><!-- to 4.3 upgrade -->
+    
+    <!-- BASE -->
     <dependency>profile-plone.app.caching:default</dependency>
+    <dependency>profile-plone.app.theming:default</dependency>
+
+    <!-- EXTRA -->
     <dependency>profile-collective.folderishtraverse:default</dependency>
     <dependency>profile-collective.folderishtypes:default</dependency>
     <dependency>profile-collective.folderorder:default</dependency>
-    <dependency>profile-thet.helsinki.project:default</dependency>
     <dependency>profile-collective.gcs:default</dependency>
+    
+    <!-- PROJECT -->
+    <dependency>profile-thet.helsinki.project:default</dependency>
   </dependencies>
 </metadata>
