@@ -1,0 +1,11 @@
+#column-1 {
+    /* -561 -176 */
+    left: -737px;
+} 
+#column-2 { display:none; }
+#column-main {
+    left: 223px;
+    margin-right:0px;
+    position: relative;
+    /* 551 + 10 + 176 */
+    width: 737px; }
