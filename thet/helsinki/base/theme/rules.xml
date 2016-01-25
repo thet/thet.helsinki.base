@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<notheme if="$ajax_load" /><!-- don't theme overlays -->
+<notheme if-path="@@plone.app.debugtoolbar.interactive.response"/>
+<notheme if-path="@@plone.app.debugtoolbar.interactive.tales"/>
+
+<rules css:if-content="#visual-portal-wrapper">
+  <theme href="++theme++helsinki/static/index.html" />
+
+  <!-- HEAD -->
+  <drop css:theme=".dropme" />
+  <drop content="/html/head/link[@rel='shortcut icon']"/>
+  <drop content="/html/head/meta[@name='viewport']"/>
+  
+  <copy attributes="*" theme="/html" content="/html"/>
+  <before theme-children="/html/head" content-children="/html/head"/>
+
+  <!-- BODY -->
+  <copy attributes="class dir" theme="/html/body" content="/html/body" />
+
+  <!-- NAVIGATION, ETC... -->
+  <copy attributes="title href accesskey"
+      css:content='#portal-logo'
+      css:theme='#the_logo a' />
+
+  <drop css:content="#portal-searchbox div.searchSection"/>
+  <replace css:content-children="#portal-searchbox" css:theme-children="#the_searchbox"/>
+
+  <replace css:content="#portal-siteactions" css:theme="#portal-siteactions"/>
+
+  <!--the_navigation -->
+  <replace
+      css:content-children="#portal-column-two dl.portletNavigationTree ul.navTreeLevel0"
+      css:theme-children="#the_navigation"/>
+  <drop css:content="#portal-column-two dl.portletNavigationTree"/>
+
+  <!-- PORTLETS -->
+  <replace css:content-children="#portal-column-one" css:theme-children="#column-1"/>
+  <replace css:content-children="#portal-column-two" css:theme-children="#column-2"/>
+
+  <!-- main content -->
+  <replace
+      css:content-children="#portal-column-content"
+      css:theme-children="#column-main"
+      />
+
+  <!-- debugtoolbar -->
+  <after css:content="#debug-toolbar-trigger"
+         css:theme-children="body" />
+  <after css:content="#debug-toolbar"
+         css:theme-children="body" />
+
+</rules>
+</rules>

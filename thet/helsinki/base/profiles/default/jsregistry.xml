@@ -3,4 +3,17 @@
   <javascript
     enabled="True"
     id="++resource++plone.app.jquerytools.dateinput.js" />
+
+  <javascript
+      bundle="default"
+      id="++theme++helsinki/static/helsinki.js"
+      insert-after="*"
+      cacheable="True"
+      compression="safe"
+      cookable="True"
+      enabled="True"
+      expression=""
+      inline="False"
+      />
+
 </object>

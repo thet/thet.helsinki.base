@@ -3,4 +3,16 @@
   <records interface="collective.gcs.interfaces.IGcsSettings" prefix="collective.gcs">
     <value key="gcs_id">002421524417321027464:00oaqalti88</value>
   </records>
+
+  <record
+      name="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings.resourceBundlesForThemes"
+      interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings"
+      field="resourceBundlesForThemes">
+    <value purge="false">
+      <element key="helsinki_skin">
+        <element>default</element>
+      </element>
+    </value>
+  </record>
+
 </registry>
