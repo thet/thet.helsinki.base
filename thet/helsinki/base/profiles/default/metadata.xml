@@ -11,7 +11,6 @@
     <dependency>profile-collective.gallery:default</dependency>
     <!--dependency>profile-collective.teaser:default</dependency-->
     <dependency>profile-thet.helsinki.project:default</dependency>
-    <dependency>profile-zettwerk.fullcalendar:default</dependency>
     <dependency>profile-collective.gcs:default</dependency>
   </dependencies>
 </metadata>

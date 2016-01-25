@@ -9,7 +9,6 @@
 
   <include package="plone.app.caching" />
   <include package="collective.gallery" />
-  <include package="zettwerk.fullcalendar" />
   <include package="Products.LinguaPlone" />
   <include package="collective.folderishtypes" />
   <include package="collective.folderishtraverse" />
