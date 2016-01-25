@@ -12,7 +12,6 @@
   <include package="collective.folderishtypes" />
   <include package="collective.folderishtraverse" />
   <include package="collective.folderorder" />
-  <include package="collective.teaser" />
   <include package="thet.helsinki.project" />
   <include package="collective.gcs" />
 

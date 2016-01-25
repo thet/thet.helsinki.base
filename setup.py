@@ -1,12 +1,11 @@
 from setuptools import setup, find_packages
-import os
 
 version = '1.0'
 
 setup(
     name='thet.helsinki.base',
     version=version,
-    description="Plone integration package for Radio Helsinki Graz',
+    description="Plone integration package for Radio Helsinki Graz",
     long_description=open("README.rst").read(),
     classifiers=[
         "Framework :: Plone",
@@ -34,7 +33,6 @@ setup(
         'collective.folderishtypes',
         'collective.folderishtraverse',
         'collective.folderorder',
-        'collective.teaser',
         'thet.helsinki.project',
         'collective.gcs',
         'plone.app.contenttypes < 1.2',
