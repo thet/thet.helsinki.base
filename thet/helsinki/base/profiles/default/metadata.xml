@@ -4,7 +4,6 @@
   <dependencies>
     <dependency>profile-plone.app.collection:default</dependency><!-- to 4.3 upgrade -->
     <dependency>profile-plone.app.caching:default</dependency>
-    <!--dependency>profile-Products.LinguaPlone:LinguaPlone</dependency-->
     <dependency>profile-collective.folderishtraverse:default</dependency>
     <dependency>profile-collective.folderishtypes:default</dependency>
     <dependency>profile-collective.folderorder:default</dependency>

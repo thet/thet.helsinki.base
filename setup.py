@@ -29,7 +29,6 @@ setup(
         'plone.app.caching',
         #'plone.formwidget.recaptcha',
         #'collective.autoresizetextarea',
-        'Products.LinguaPlone',
         'collective.folderishtypes',
         'collective.folderishtraverse',
         'collective.folderorder',

@@ -8,7 +8,6 @@
     i18n_domain="thet.helsinki.base">
 
   <include package="plone.app.caching" />
-  <include package="Products.LinguaPlone" />
   <include package="collective.folderishtypes" />
   <include package="collective.folderishtraverse" />
   <include package="collective.folderorder" />
