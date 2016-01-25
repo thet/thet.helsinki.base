@@ -48,6 +48,22 @@
       css:theme-children="#column-main"
       />
 
+  <!-- extra content -->
+  <after css:if-content="body.section-programm"
+      href="++theme++helsinki/static/snippets.html"
+      css:content-children="#disqus_dep"
+      css:theme-children="#column-main"/>
+  <after href="++theme++helsinki/static/snippets.html"
+      css:content-children="#disqus_box_comments"
+      css:theme-children="#column-2"/>
+
+  <before href="http://pv.helsinki.at/program/current_box/"
+    css:content-children="body"
+    css:theme-children="#column-1" />
+  <before href="http://pv.helsinki.at/program/tips_box/"
+    css:content-children="body"
+    css:theme-children="#column-1" />
+
   <!-- debugtoolbar -->
   <after css:content="#debug-toolbar-trigger"
          css:theme-children="body" />
