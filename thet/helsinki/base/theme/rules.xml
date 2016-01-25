@@ -44,25 +44,65 @@
 
   <!-- main content -->
   <replace
+      css:if-not-content="body.section-programm"
       css:content-children="#portal-column-content"
       css:theme-children="#column-main"
       />
 
+  <replace
+      href="http://pv.helsinki.at/program/today"
+      css:if-content="body.section-programm.subsection-today"
+      css:content-children="body"
+      css:theme-children="#column-main"
+      />
+
+  <replace
+      href="http://pv.helsinki.at/program/week"
+      css:if-content="body.section-programm.subsection-week"
+      css:content-children="body"
+      css:theme-children="#column-main"
+      />
+
+  <replace
+      href="http://pv.helsinki.at/program/shows"
+      css:if-content="body.section-programm.subsection-shows"
+      css:content-children="body"
+      css:theme-children="#column-main"
+      />
+
+  <replace
+      href="http://pv.helsinki.at/program/hosts"
+      css:if-content="body.section-programm.subsection-hosts"
+      css:content-children="body"
+      css:theme-children="#column-main"
+      />
+
+  <replace
+      href="http://pv.helsinki.at/program/tips"
+      css:if-content="body.section-programm.subsection-tips"
+      css:content-children="body"
+      css:theme-children="#column-main"
+      />
+
   <!-- extra content -->
-  <after css:if-content="body.section-programm"
+  <after
       href="++theme++helsinki/static/snippets.html"
+      css:if-content="body.section-programm"
       css:content-children="#disqus_dep"
       css:theme-children="#column-main"/>
-  <after href="++theme++helsinki/static/snippets.html"
+  <after
+      href="++theme++helsinki/static/snippets.html"
       css:content-children="#disqus_box_comments"
       css:theme-children="#column-2"/>
 
-  <before href="http://pv.helsinki.at/program/current_box/"
-    css:content-children="body"
-    css:theme-children="#column-1" />
-  <before href="http://pv.helsinki.at/program/tips_box/"
-    css:content-children="body"
-    css:theme-children="#column-1" />
+  <before
+      href="http://pv.helsinki.at/program/current_box/"
+      css:content-children="body"
+      css:theme-children="#column-1" />
+  <before
+      href="http://pv.helsinki.at/program/tips_box/"
+      css:content-children="body"
+      css:theme-children="#column-1" />
 
   <!-- debugtoolbar -->
   <after css:content="#debug-toolbar-trigger"
