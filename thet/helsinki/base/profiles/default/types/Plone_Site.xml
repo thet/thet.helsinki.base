@@ -7,6 +7,7 @@
   <element value="Folderish Document" />
   <element value="Topic" />
   <element value="Link" />
+  <element value="Proxy" />
  </property>
  <property name="view_methods">
   <element value="folder_summary_view"/>
