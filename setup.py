@@ -43,6 +43,6 @@ setup(
         # NEW
         'collective.plonetruegallery',
         'collective.quickupload',
-        'plone.app.contenttypes < 1.2'
+        'collective.proxytype',
     ],
 )

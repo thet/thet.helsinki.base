@@ -37,50 +37,55 @@
       css:content-children="#portal-column-two dl.portletNavigationTree ul.navTreeLevel0"
       css:theme-children="#the_navigation"/>
   <drop css:content="#portal-column-two dl.portletNavigationTree"/>
+  <drop css:content="#portal-breadcrumbs"/>
 
   <!-- PORTLETS -->
-  <replace css:content-children="#portal-column-one" css:theme-children="#column-1"/>
-  <replace css:content-children="#portal-column-two" css:theme-children="#column-2"/>
+  <rules css:if-not-content="body.section-programm.subsection-wochenansicht">
+    <replace css:content-children="#portal-column-one" css:theme-children="#column-1"/>
+    <replace css:content-children="#portal-column-two" css:theme-children="#column-2"/>
+  </rules>
+
+
+  <!-- PROGRAMM LAYOUT -->
+  <!-- Program URLs:
+      http://pv.helsinki.at/program/today
+      http://pv.helsinki.at/program/week
+      http://pv.helsinki.at/program/shows
+      http://pv.helsinki.at/program/hosts
+      http://pv.helsinki.at/program/tips
+      http://pv.helsinki.at/program/current_box
+      http://pv.helsinki.at/program/tips_box
+  -->
+
+  <before content="//dl[@id='box_calendar']" theme-children="/html/body/div[@id='column-1']" method="raw"/>
+  <drop content="//dl[@id='box_calendar']"/>
+
+  <before content="//dl[@id='broadcastformat']" theme-children="/html/body/div[@id='column-2']" method="raw"/>
+  <drop content="//dl[@id='broadcastformat']"/>
+
+  <before content="//dl[@id='filter-header']" theme-children="/html/body/div[@id='column-1']" method="raw"/>
+  <drop content="//dl[@id='filter-header']"/>
+
+  <before content="//dl[@id='filterbox_musicfocus']" theme-children="/html/body/div[@id='column-1']" method="raw"/>
+  <drop content="//dl[@id='filterbox_musicfocus']"/>
+
+  <before content="//dl[@id='filterbox_showinformation']" theme-children="/html/body/div[@id='column-1']" method="raw"/>
+  <drop content="//dl[@id='filterbox_showinformation']"/>
+
+  <before content="//dl[@id='filterbox_showtopic']" theme-children="/html/body/div[@id='column-1']" method="raw"/>
+  <drop content="//dl[@id='filterbox_showtopic']"/>
+
+  <rules css:if-content="div#content-main.week-schedule">
+    <drop css:theme="#column-1"/>
+    <drop css:theme="#column-2"/>
+    <before theme-children="/html/body/div[@id='column-main']" method="raw">
+      <xsl:attribute name="class"><xsl:value-of select="/html/body/div[@id='column-main']/@class" /> fullwidth</xsl:attribute>
+    </before>
+  </rules>
 
   <!-- main content -->
   <replace
-      css:if-not-content="body.section-programm"
       css:content-children="#portal-column-content"
-      css:theme-children="#column-main"
-      />
-
-  <replace
-      href="http://pv.helsinki.at/program/today"
-      css:if-content="body.section-programm.subsection-today"
-      css:content-children="body"
-      css:theme-children="#column-main"
-      />
-
-  <replace
-      href="http://pv.helsinki.at/program/week"
-      css:if-content="body.section-programm.subsection-week"
-      css:content-children="body"
-      css:theme-children="#column-main"
-      />
-
-  <replace
-      href="http://pv.helsinki.at/program/shows"
-      css:if-content="body.section-programm.subsection-shows"
-      css:content-children="body"
-      css:theme-children="#column-main"
-      />
-
-  <replace
-      href="http://pv.helsinki.at/program/hosts"
-      css:if-content="body.section-programm.subsection-hosts"
-      css:content-children="body"
-      css:theme-children="#column-main"
-      />
-
-  <replace
-      href="http://pv.helsinki.at/program/tips"
-      css:if-content="body.section-programm.subsection-tips"
-      css:content-children="body"
       css:theme-children="#column-main"
       />
 
@@ -95,14 +100,6 @@
       css:content-children="#disqus_box_comments"
       css:theme-children="#column-2"/>
 
-  <before
-      href="http://pv.helsinki.at/program/current_box/"
-      css:content-children="body"
-      css:theme-children="#column-1" />
-  <before
-      href="http://pv.helsinki.at/program/tips_box/"
-      css:content-children="body"
-      css:theme-children="#column-1" />
 
   <!-- debugtoolbar -->
   <after css:content="#debug-toolbar-trigger"
