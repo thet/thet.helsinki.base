@@ -40,6 +40,7 @@ setup(
         'collective.gcs',
         'plone.app.caching',
         'z3c.jbot',
+
         # NEW
         'collective.plonetruegallery',
         'collective.quickupload',
