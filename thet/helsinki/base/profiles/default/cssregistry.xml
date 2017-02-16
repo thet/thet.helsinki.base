@@ -46,7 +46,7 @@
 
   <stylesheet
       bundle="default"
-      id="http://helsinki.at/programm/styles.css"
+      id="http://pv.helsinki.at/program/styles.css"
       insert-after="*"
       applyPrefix="False"
       cacheable="False"
