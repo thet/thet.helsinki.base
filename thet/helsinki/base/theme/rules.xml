@@ -40,7 +40,7 @@
   <drop css:content="#portal-breadcrumbs"/>
 
   <!-- PORTLETS -->
-  <rules css:if-not-content="body.section-programm.subsection-wochenansicht">
+  <rules css:if-not-content="body.section-program.subsection-wochenansicht">
     <replace css:content-children="#portal-column-one" css:theme-children="#column-1"/>
     <replace css:content-children="#portal-column-two" css:theme-children="#column-2"/>
   </rules>
@@ -92,7 +92,7 @@
   <!-- extra content -->
   <after
       href="++theme++helsinki/static/snippets.html"
-      css:if-content="body.section-programm"
+      css:if-content="body.section-program"
       css:content-children="#disqus_dep"
       css:theme-children="#column-main"/>
   <after

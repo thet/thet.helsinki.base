@@ -301,7 +301,7 @@ ul#the_navigation > li {
     /*display:inline-block;*/
     display:none; /* display only those, which are wanted */
 }
-ul#the_navigation > li.section-programm,
+ul#the_navigation > li.section-program,
 ul#the_navigation > li.section-info,
 ul#the_navigation > li.section-projekte { display:inline-block; }
 
@@ -324,7 +324,7 @@ ul#the_navigation > li > a {
 ul#the_navigation > li.navTreeCurrentNode > a,
 ul#the_navigation > li.navTreeItemInPath > a,
 ul#the_navigation > li:hover > a { border-color:#FBD62A; }
-ul#the_navigation > li.section-programm > a {
+ul#the_navigation > li.section-program > a {
     background-image:url(img/str-quer-spiegel-gelb.png);
     margin-right:4px; }
 ul#the_navigation > li.section-info > a {
@@ -333,7 +333,7 @@ ul#the_navigation > li.section-info > a {
 ul#the_navigation > li.section-projekte > a {
     background-image:url(img/str-quer-gelb.png); }
 
-ul#the_navigation > li.section-programm > a > span {
+ul#the_navigation > li.section-program > a > span {
     letter-spacing:-0.05em;
     background:url(img/radio1-real.png) no-repeat left center;
     padding-left:49px !important; }
