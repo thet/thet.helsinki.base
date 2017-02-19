@@ -28,12 +28,4 @@ jQuery(document).ready(function () {
         }
     });
 
-    jQuery("#calendar").datepicker({
-        dateFormat: "yy.mm.dd",
-        defaultDate: window.location.href.split('/').slice(4, 7).join('.'),
-        onSelect: function (dateText, inst) {
-            window.location = '/programm/' + dateText.split('.').join('/');
-        }
-    });
-
 });
