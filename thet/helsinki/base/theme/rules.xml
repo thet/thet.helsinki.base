@@ -56,6 +56,7 @@
       http://pv.helsinki.at/program/current_box
       http://pv.helsinki.at/program/tips_box
   -->
+  <drop content="/html/body[contains(@class, 'section-program')]//h1[@class='documentFirstHeading']"/>
 
   <before content="//dl[@id='box_calendar']" theme-children="/html/body/div[@id='column-1']" method="raw"/>
   <drop content="//dl[@id='box_calendar']"/>
