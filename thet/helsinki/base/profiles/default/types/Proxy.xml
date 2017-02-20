@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object name="Proxy">
+ <property name="view_methods" purge="False">
+  <element value="traverse_view"/>
+ </property>
+</object>
