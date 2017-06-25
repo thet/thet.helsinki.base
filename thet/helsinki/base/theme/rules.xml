@@ -48,13 +48,13 @@
 
   <!-- PROGRAMM LAYOUT -->
   <!-- Program URLs:
-      http://pv.helsinki.at/program/today
-      http://pv.helsinki.at/program/week
-      http://pv.helsinki.at/program/shows
-      http://pv.helsinki.at/program/hosts
-      http://pv.helsinki.at/program/tips
-      http://pv.helsinki.at/program/current_box
-      http://pv.helsinki.at/program/tips_box
+      https://pv.helsinki.at/program/today
+      https://pv.helsinki.at/program/week
+      https://pv.helsinki.at/program/shows
+      https://pv.helsinki.at/program/hosts
+      https://pv.helsinki.at/program/tips
+      https://pv.helsinki.at/program/current_box
+      https://pv.helsinki.at/program/tips_box
   -->
   <drop content="/html/body[contains(@class, 'section-program')]//h1[@class='documentFirstHeading']"/>
 
