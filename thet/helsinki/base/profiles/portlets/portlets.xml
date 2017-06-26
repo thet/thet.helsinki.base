@@ -62,7 +62,7 @@
       type="portlets.rss"
       visible="True">
     <property name="count">5</property>
-    <property name="url">http://cba.fro.at/stationsrss/4</property>
+    <property name="url">https://cba.fro.at/station/radio-helsinki/feed</property>
     <property name="portlet_title">Sendungen zum Nachhören auf cba.fro.at</property>
     <property name="timeout">100</property>
   </assignment>
@@ -73,7 +73,7 @@
       type="portlets.rss"
       visible="True">
     <property name="count">3</property>
-    <property name="url">http://www.freie-radios.net/portal/podcast.php?radio=43&amp;rss</property>
+    <property name="url">https://www.freie-radios.net/portal/podcast.php?radio=43&amp;rss</property>
     <property name="portlet_title">Sendungen zum Nachhören auf freie-radios.net</property>
     <property name="timeout">100</property>
   </assignment>
@@ -99,7 +99,7 @@
       visible="True">
     <property name="header">facebook</property>
     <property name="text"><![CDATA[
-<p><a href="http://www.facebook.com/pages/Radio-Helsinki/222398828935">
+<p><a href="https://www.facebook.com/RadioHelsinkiGraz/">
 <span class="fbtext">Find us on</span>
 <span class="findfacebook"><span>Facebook</span></span></a></p>
       ]]></property>
@@ -177,53 +177,6 @@
   <assignment name="support-us"
       type="plone.portlet.static.Static"
       category="context"
-      key="/info/mitmachen/unterstutzen"
-      manager="plone.rightcolumn"
-      visible="True">
-    <property name="header">support us</property>
-    <property name="text"><![CDATA[
-<p><a href="/info/mitmachen/unterstutzen">Unterstütze uns!</a></p>
-      ]]></property>
-  </assignment>
-  <assignment name="find-facebook"
-      type="plone.portlet.static.Static"
-      category="context"
-      key="/info/mitmachen/unterstutzen"
-      manager="plone.rightcolumn"
-      visible="True">
-    <property name="header">facebook</property>
-    <property name="text"><![CDATA[
-<p><a href="http://www.facebook.com/pages/Radio-Helsinki/222398828935">
-<span class="fbtext">Find us on</span>
-<span class="findfacebook"><span>Facebook</span></span></a></p>
-      ]]></property>
-  </assignment>
-  <assignment name="mach-mit"
-      type="plone.portlet.static.Static"
-      category="context"
-      key="/info/mitmachen/unterstutzen"
-      manager="plone.rightcolumn"
-      visible="True">
-    <property name="header">mach mit!</property>
-    <property name="text"><![CDATA[
-<p><a href="/info/mitmachen">Mach mit!</a></p>
-<p><a href="/info/mitmachen/mitmachen-en">Join in!</a></p>
-<p><a href="/info/mitmachen/mitmachen-hr">Uključi se!</a></p>
-<p><a href="/info/mitmachen/mitmachen-ru">Присоединяйся!</a></p>
-<p><a href="/info/mitmachen/mitmachen-fr">REJOIGNEZ NOUS!</a></p>
-<p><a href="/info/mitmachen/mitmachen-hu">VEGYÉL RÉSZT!</a></p>
-<p><a href="/info/mitmachen/mitmachen-ro">FII ALĂTURI</a></p>
-<p><a href="/info/mitmachen/mitmachen-es">¡Apúntate!</a></p>
-<p><a href="/info/mitmachen/mitmachen-ku">Li tew me be!</a></p>
-<p><a href="/info/mitmachen/mitmachen-tr">BİZE KATIL!</a></p>
-      ]]></property>
-  </assignment>
-<!-- end community portlets -->
-
-<!-- community portlets -->
-  <assignment name="support-us"
-      type="plone.portlet.static.Static"
-      category="context"
       key="/info/mitmachen"
       manager="plone.rightcolumn"
       visible="True">
@@ -240,7 +193,7 @@
       visible="True">
     <property name="header">facebook</property>
     <property name="text"><![CDATA[
-<p><a href="http://www.facebook.com/pages/Radio-Helsinki/222398828935">
+<p><a href="https://www.facebook.com/RadioHelsinkiGraz/">
 <span class="fbtext">Find us on</span>
 <span class="findfacebook"><span>Facebook</span></span></a></p>
       ]]></property>
@@ -266,7 +219,6 @@
       ]]></property>
   </assignment>
 <!-- end community portlets -->
-
 
 
   <!-- subsite projekte -->
