@@ -34,6 +34,7 @@ setup(
         # EXTRA
         # 'collective.autoresizetextarea',
         # 'plone.formwidget.recaptcha',
+        'collective.disclaimer',
         'collective.folderishtraverse',
         'collective.folderishtypes',
         'collective.folderorder',

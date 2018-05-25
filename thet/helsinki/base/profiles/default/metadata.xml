@@ -8,6 +8,7 @@
     <dependency>profile-plone.app.theming:default</dependency>
 
     <!-- EXTRA -->
+    <dependency>profile-collective.disclaimer:default</dependency>
     <dependency>profile-collective.folderishtraverse:default</dependency>
     <dependency>profile-collective.folderishtypes:default</dependency>
     <dependency>profile-collective.folderorder:default</dependency>

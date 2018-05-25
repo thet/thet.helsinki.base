@@ -15,7 +15,7 @@
   <drop css:theme=".dropme" />
   <drop content="/html/head/link[@rel='shortcut icon']"/>
   <drop content="/html/head/meta[@name='viewport']"/>
-  
+
   <copy attributes="*" theme="/html" content="/html"/>
   <before theme-children="/html/head" content-children="/html/head"/>
 
@@ -101,6 +101,8 @@
       css:content-children="#disqus_box_comments"
       css:theme-children="#column-2"/>
 
+
+  <after css:content="#viewlet-disclaimer"    css:theme-children="body" />
 
   <!-- debugtoolbar -->
   <after css:content="#debug-toolbar-trigger"

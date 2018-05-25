@@ -16,6 +16,7 @@
   <include package="thet.helsinki.project" />
 
   <!-- EXTRA -->
+  <include package="collective.disclaimer"/>
   <include package="collective.folderishtypes" />
   <include package="collective.folderishtraverse" />
   <include package="collective.folderorder" />
