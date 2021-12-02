@@ -38,15 +38,15 @@
 
     <div id="the_toolbox">
       <div id="livestream">
-        <a href="/livestream">Livestream</a>
+        <a href="http://localhost:9080/radio-helsinki/helsinki/livestream">Livestream</a>
       </div>
       <div id="onair">
-        <a href="/nowplaying">ON AIR</a>
+        <a href="https://helsinki.at/program/trackservice/">ON AIR</a>
         <input name="nowplaying" type="text" value="" disabled="disabled" />
       </div>
       <div id="the_searchbox">
-        <form id="searchform">
-          <input type="search" value="suchen" />
+        <form id="searchform" method="GET" action="https://helsinki.at/suchergebnis/">
+          <input type="search" name="q" placeholder="suchen" />
         </form>
       </div>
     </div>

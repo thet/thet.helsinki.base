@@ -16,6 +16,12 @@
   <drop content="/html/head/link[@rel='shortcut icon']"/>
   <drop content="/html/head/meta[@name='viewport']"/>
 
+  <drop content="/html/head/link[@rel='search']"/>
+  <drop content="/html/head/link[@rel='alternate']"/>
+  <drop content="/html/head/link[@rel='canonical']"/>
+  <drop content="/html/head/meta[@name='google-site-verification']"/>
+  <drop content="/html/head/base"/>
+
   <copy attributes="*" theme="/html" content="/html"/>
   <before theme-children="/html/head" content-children="/html/head"/>
 
@@ -27,8 +33,8 @@
       css:content='#portal-logo'
       css:theme='#the_logo a' />
 
-  <drop css:content="#portal-searchbox div.searchSection"/>
-  <replace css:content-children="#portal-searchbox" css:theme-children="#the_searchbox"/>
+  <!--drop css:content="#portal-searchbox div.searchSection"/>
+  <replace css:content-children="#portal-searchbox" css:theme-children="#the_searchbox"/-->
 
   <replace css:content="#portal-siteactions" css:theme="#portal-siteactions"/>
 
@@ -91,15 +97,15 @@
       />
 
   <!-- extra content -->
-  <after
+  <!--after
       href="++theme++helsinki/static/snippets.html"
       css:if-content="body.section-program"
       css:content-children="#disqus_dep"
-      css:theme-children="#column-main"/>
-  <after
+      css:theme-children="#column-main"/-->
+  <!--after
       href="++theme++helsinki/static/snippets.html"
       css:content-children="#disqus_box_comments"
-      css:theme-children="#column-2"/>
+      css:theme-children="#column-2"/-->
 
 
   <after css:content="#viewlet-disclaimer"    css:theme-children="body" />
